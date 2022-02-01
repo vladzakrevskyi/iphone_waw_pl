@@ -1,0 +1,47 @@
+{% extends 'main/base/base.html' %}
+{% load static %}
+{% load i18n %}
+{% load thumbnail %}
+{% block head %}
+<meta name="description" content="Dobry Majster - Apple Service Warszawa. Naprawa telefonów , laptopów , tabletów Apple Warszawa. Telefon: ☎ +48 795 010 707"/>
+<meta name="keywords" content="Apple , naprawa Apple , naprawa Apple Warszawa , serwis , service , naprawa laptopów , naprawa komórek , naprawa telefonów Warszawa , Dobry Majster , kontakt Dobry Majster , kontakt" />
+<meta name="author" lang="pl" content="Dobry Majster - Apple Service Warszawa" />
+    <link rel="canonical" href="https://iphone.waw.pl/zespol">
+{% endblock %}
+{% block title %}{% trans "Dobry Majster Serwis - Zespół" %}{% endblock %}
+
+{% block content %}
+<section>
+    <!-- Team Members START -->
+<div class="section-block-grey">
+    <div class="container">
+        <div class="section-heading center-holder">
+            <h3>{% trans "Nasz zespół" %}</h3>
+            <div class="section-heading-line"></div>
+            <p>{% trans "Nasi pracownicy" %}</p>
+        </div>
+        <div class="carousel slide" data-ride="carousel" id="demo">
+
+            <!-- The slideshow -->
+            <div class="owl-carousel owl-theme" id="services-carousel">
+                {% for el in team %}
+                <div class="team-member">
+                    <div class="team-member-img">
+                        {% thumbnail el.image "400x550" crop="center" as team_image %}
+                        <img alt="img" src="/media/{{ team_image }}">
+                        {% endthumbnail %}
+                    </div>
+                    <div class="team-member-text">
+                        <h4><a href="#">{{ el.name_surname }}</a></h4>
+                        <span>{{ el.post }}</span>
+                        <p>{{ el.name_desc|safe }}</p>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Team Members END -->
+</section>
+{% endblock %}

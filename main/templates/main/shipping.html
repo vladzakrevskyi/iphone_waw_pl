@@ -1,0 +1,43 @@
+{% extends 'main/base/base.html' %}
+{% load static %}
+{% load i18n %}
+{% block head %}
+<meta name="description" content="Dobry Majster - Apple Service Warszawa. Naprawa telefonów , laptopów , tabletów Apple Warszawa. Telefon: ☎ +48 795 010 707"/>
+<meta name="keywords" content="Apple , naprawa Apple , naprawa Apple Warszawa , serwis , service , naprawa laptopów , naprawa komórek , naprawa telefonów Warszawa , Dobry Majster , kontakt Dobry Majster , kontakt" />
+<meta name="author" lang="pl" content="Dobry Majster - Apple Service Warszawa" />
+    <link rel="canonical" href="https://iphone.waw.pl/dostawa">
+{% endblock %}
+{% block title %}{% trans "Dobry Majster Serwis - Dostawa" %}{% endblock %}
+
+
+{% block content %}
+<div class="section-block">
+    <div class="container">
+        <h1 class="text-center">{% trans "Dostawa" %}</h1>
+       <!-- Info Section START -->
+<div class="container">
+    <div class="blog-list-simple">
+        <div class="row">
+            <div class="col-12">
+                <div class="blog-list-simple-img">
+                    <img class="img-left rounded-border shadow-primary" src="../../static/main/img/photo_2021-03-22%2014.20.50.jpeg" alt="img" width="50%">
+                </div>
+                <div class="blog-list-simple-text">
+                    {% for el in shipping %}
+                        <h4>
+                            {{ el.title }}
+                        </h4>
+                    {% endfor %}
+                    <div class="section-heading-line-left"></div>
+                    {% for text in shipping %}
+                        <p>{{ text.desc|safe }}</p>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Info Section END -->
+    </div>
+</div>
+{% endblock %}

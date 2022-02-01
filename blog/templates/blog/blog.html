@@ -1,0 +1,74 @@
+{% extends 'main/base/base.html' %}
+{% load thumbnail %}
+{% load static %}
+{% block head %}
+<meta name="description" content="Dobry Majster - Apple Service Warszawa. Naprawa telefonów , laptopów , tabletów Apple Warszawa. Telefon: ☎ +48 795 010 707"/>
+<meta name="keywords" content="Apple , naprawa Apple , naprawa Apple Warszawa , serwis , service , naprawa laptopów , naprawa komórek , naprawa telefonów Warszawa , Dobry Majster , iPhone , iPad , AppleWatch , MacBook , Blog , Blog Dobry Majster" />
+<meta name="author" lang="pl" content="Dobry Majster - Apple Service Warszawa" />
+    <link rel="canonical" href="https://iphone.waw.pl{% url 'blog' %}">
+{% endblock %}
+{% block title %}Blog{% endblock %}
+
+
+{% block content %}
+<!-- Page Title START -->
+<div class="page-title-section"
+     style="background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('../../static/main/img/slider_image/blog_slider_image.jpg');">
+    <div class="container">
+        <h1>Blog Dobry Majster</h1>
+    </div>
+</div>
+<!-- Page Title END -->
+
+
+<!-- Blog Grid START -->
+<div class="section-block-grey blog-grey">
+    <div class="container">
+        <div class="row">
+            {% if posts %}
+            {% for el in posts %}
+            <div class="col-md-4 col-sm-12 col-12">
+                <div class="blog-grid">
+                    <div class="blog-grid-img">
+                        {% thumbnail el.image_small "400x268" crop="center" as im %}
+                        <a href="{% url 'blog_post' post_slug=el.slug %}"><img alt="img" src="/media/{{ im }}"></a>
+                        {% endthumbnail %}
+                    </div>
+                    <div class="blog-grid-text">
+                        <span>{{ el.category }}</span>
+                        <a href="{% url 'blog_post' post_slug=el.slug %}"><h4>{{ el.title }}</h4></a>
+                        <ul>
+                            <li><i class="fa fa-calendar"></i>{{ el.date }}</li>
+                        </ul>
+                        <div class="short-desc">{{ el.short_desc|safe }}</div>
+                        <div class="mt-20 left-holder">
+                            <a class="primary-button button-sm"
+                               href="{% url 'blog_post' post_slug=el.slug %}">Zobacz</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+            {% else %}
+            <div class="container">
+                <div class="row"></div>
+                <div class="col-12 text-center">
+                    <h3>There are no articles yet.</h3>
+                </div>
+            </div>
+        </div>
+        {% endif %}
+    </div>
+    <div class="container text-center page_navigation_container">
+        {% if posts.has_previous %}
+        <a class="blog_navigation" href="{% url 'blog' %}?page={{posts.previous_page_number}}"><i
+                class="fa fa-angle-left"></i></a>
+        {% endif %}
+        {% if posts.has_next %}
+        <a class="blog_navigation" href="{% url 'blog' %}?page={{posts.next_page_number}}"><i
+                class="fa fa-angle-right"></i></a>
+        {% endif %}
+    </div>
+</div>
+<!-- Blog Grid END -->
+{% endblock %}

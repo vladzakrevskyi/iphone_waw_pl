@@ -1,0 +1,69 @@
+{% extends 'main/base/base.html' %}
+{% load static %}
+{% load i18n %}
+{% load thumbnail %}
+{% block head %}
+<meta name="description" content="Dobry Majster - Apple Service Warszawa. Naprawa telefonów , laptopów , tabletów Apple Warszawa. Telefon: ☎ +48 795 010 707"/>
+<meta name="keywords" content="Apple , naprawa Apple , naprawa Apple Warszawa , serwis , service , naprawa laptopów , naprawa komórek , naprawa telefonów Warszawa , Dobry Majster , O nas , kontakt" />
+<meta name="author" lang="pl" content="Dobry Majster - Apple Service Warszawa" />
+    <link rel="canonical" href="https://iphone.waw.pl/o-nas">
+{% endblock %}
+{% block title %}{% trans "Dobry Majster Serwis - O Nas" %}{% endblock %}
+{% block content %}
+
+
+<!-- Info Section START -->
+<div class="section-block about">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-5 col-sm-12 col-xs-12 text-center">
+                <img alt="img" class="text-center" src="../../static/main/img/logos/logo.png" width="70%">
+            </div>
+            <div class="col-md-7 col-sm-12 col-xs-12" style="margin-top: 3%">
+                <div class="pr-30-md">
+                    <div class="section-heading">
+                        <h4>{% trans "O nas" %}</h4>
+                    </div>
+                    <div class="section-heading-line-left"></div>
+                    <div class="text-content-big mt-20">
+                        <p>{% trans "Drodzy Klienci, zapraszamy do naszego serwisu urządzeń marki Apple w Warszawie. Oferujemy wieloletnie doświadczenie w połączeniu z pasją do nowych technologii, dzięki czemu zapewniamy fachową i skuteczną naprawę iPhonów i innych sprzętów marki Apple. Jesteśmy jednym z najskuteczniejszych serwisów w Warszawie, gwarantującym jednocześnie atrakcyjne ceny i szybki termin realizacji usługi." %}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+        <div class="row o_nas_text_section">
+            <p class="text-left">{% trans "W naszej ofercie znajdziecie szeroki zakres usług związanych z naprawą iPhonów, iPadów, Macbookówczy iWatchy. Do każdego Klienta podchodzimy indywidualnie, skutecznie lokalizując źródłoproblemu i naprawiając urządzenie od ręki lub – w przypadku poważniejszej awarii – w możliwie najkrótszym czasie. Dzięki dużej bazie części zapasowych możemy zabrać się do wymiany komponentów od razu po wykryciu usterki – nie musimy czekać na dostawę odpowiedniej części. Znacznie skraca to czas naprawy, a tym samy przyspiesza odzyskanie sprawnego i odświeżonego sprzętu przez jego właściciela." %}</p>
+            <p style="margin-top:2%; font-size: 15px">{% trans "Oferujemy między innymi:" %}</p>
+            <div class="container">
+                    <div class="row mt-20 text-left" style="margin-bottom: 20px">
+                        {% for category in categories %}
+                        {% for service in category.sub.all %}
+                        <div class="col-md-4 col-sm-12 col-xs-12">
+                            <ul class="primary-list about_list">
+                                <li><i class="fa fa-caret-right"></i><a href="{% url 'detail_service' category_slug=category.slug service_slug=service.slug %}">{{ service.name }}</a></li>
+                            </ul>
+                        </div>
+                        {% endfor %}
+                        {% endfor %}
+                    </div>
+            </div>
+                    <p class="text-left">{% trans "Nasza oferta dotyczy wszystkich sprzętów od Apple. Co ważne – diagnostykę wykonujemy BEZPŁATNIE! Jeśli po weryfikacji Twój sprzęt okaże się sprawny, nie zapłacisz ani złotówki. A jeśli podejmiemy się naprawy, zaoferujemy także 30-dniową gwarancję na wykonaną usługę." %}
+                    </p><br>
+                    <p class="text-left">{% trans "Nasza specjalność to naprawa iPhone’ów i innych sprzętów Apple. Warszawa nie ma drugiego takiego serwisu, dlatego zachęcamy do kontaktu i umówienia się na dogodny termin realizacji usługi serwisowej. Zadbamy o Twój sprzęt tak, byś nie musiał się martwić o jego sprawność i komfort użytkowania. Zapewniamy, że „jabłuszko” nie ma przed nami żadnych tajemnic! ;)" %}
+                    </p>
+            </div>
+    </div>
+</div>
+</div>
+<!-- Info Section END -->
+
+<section>
+    <div class="mt-10" id="map">
+        <iframe allowfullscreen=""
+                aria-hidden="false" frameborder="0"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2443.0403921997586!2d20.989986215745816!3d52.24264997976272!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471ecc7ddd0790b1%3A0xe6ea4f260f2088c1!2sal.%20Jana%20Paw%C5%82a%20II%2041A%2C%2001-008%20Warszawa!5e0!3m2!1spl!2spl!4v1613293843441!5m2!1spl!2spl"
+                style="border:0;" tabindex="0"></iframe>
+    </div>
+</section>
+{% endblock %}

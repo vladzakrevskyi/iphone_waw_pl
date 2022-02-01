@@ -1,0 +1,39 @@
+{% extends 'main/base/base.html' %}
+{% load static %}
+{% load i18n %}
+{% block head %}
+<meta name="description" content="Dobry Majster - Apple Service Warszawa. Naprawa telefonów , laptopów , tabletów Apple Warszawa. Telefon: ☎ +48 795 010 707"/>
+<meta name="keywords" content="Apple , naprawa Apple , naprawa Apple Warszawa , serwis , service , naprawa laptopów , naprawa komórek , naprawa telefonów Warszawa , Dobry Majster , kontakt Dobry Majster , kontakt" />
+<meta name="author" lang="pl" content="Dobry Majster - Apple Service Warszawa" />
+    <link rel="canonical" href="https://iphone.waw.pl/akcesoria">
+{% endblock %}
+{% block title %}{% trans "Dobry Majster Serwis - Akcesoria" %}{% endblock %}
+
+
+{% block content %}
+
+<div class="section-block">
+    <div class="container accessories">
+        {% if accessories %}
+        <h5 class="text-left" style="color: #000">{% trans "Oferujemy szeroki wybór towarów najlepszej jakości w atrakcyjnych cenach." %}</h5>
+        <div class="row">
+        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 text">
+            <h5 class="text-left" style="color: #000">{% trans "U nas kupisz:" %}</h5>
+            <div class="section-heading-line-left"></div>
+            <ul class="accessories_list">
+                {% for el in accessories %}
+                <li><p><i class="fa fa-caret-right"></i>{{ el.name }} - {{ el.price }}</p></li>
+                {% endfor %}
+            </ul>
+            <h5 class="text-left" style="color: #000; font-weight: 500;">{% trans "Zapraszamy do naszego Instagram" %} <a href="https://www.instagram.com/dobry.majster" target="_blank"><img src="../../static/main/img/logos/instagram-logo.png" width="25" height="25"><b style="color: #000; font-weight: 600; font-size: 18px"> dobry.majster</b></a></h5>
+        </div>
+        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 image">
+            <img class="rounded-border shadow-primary" src="../../static/main/img/IMG_7086.JPG">
+        </div>
+        </div>
+        {% else %}
+        <h2 class="text-center">{% trans "Na razie nie mamy żadnych akcesoriów do sprzedaży" %}</h2>
+        {% endif %}
+    </div>
+</div>
+{% endblock %}

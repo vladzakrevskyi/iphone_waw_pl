@@ -1,0 +1,24 @@
+{% extends 'main/base/base.html' %}
+{% load static %}
+{% load i18n %}
+{% block head %}
+<meta name="description" content="Dobry Majster - Apple Service Warszawa. Naprawa telefonów , laptopów , tabletów Apple Warszawa. Telefon: ☎ +48 795 010 707"/>
+<meta name="keywords" content="Apple , naprawa Apple , naprawa Apple Warszawa , serwis , service , naprawa laptopów , naprawa komórek , naprawa telefonów Warszawa , Dobry Majster , kontakt , sukces" />
+<meta name="author" lang="pl" content="Dobry Majster - Apple Service Warszawa" />
+    <link rel="canonical" href="https://iphone.waw.pl/sukces">
+{% endblock %}
+{% block title %}{% trans "Dobry Majster Serwis - Kontakt" %}{% endblock %}
+
+
+{% block content %}
+<div class="container text-center title_sukces">
+    <div class="col-12">
+        <h2>{% trans "Dziękujemy za zgłoszenie!" %}</h2>
+        <h4>{% trans "Wkrótce się skontaktujemy z tobą" %}</h4>
+        <div class="mt-30">
+            <a class="primary-button button-md" href="{% url 'contact' %}">{% trans "Kontakt" %}</a>
+            <a class="primary-button button-md" href="{% url 'home' %}">{% trans "Strona Główna" %}</a>
+        </div>
+    </div>
+</div>
+{% endblock %}

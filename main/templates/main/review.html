@@ -1,0 +1,135 @@
+{% extends 'main/base/base.html' %}
+{% load static %}
+{% load i18n %}
+{% load thumbnail %}
+{% block head %}
+<meta name="description" content="Dobry Majster - Apple Service Warszawa. Naprawa telefonów , laptopów , tabletów Apple Warszawa. Telefon: ☎ +48 795 010 707"/>
+<meta name="keywords" content="Apple , naprawa Apple , naprawa Apple Warszawa , serwis , service , naprawa laptopów , naprawa komórek , naprawa telefonów Warszawa , Dobry Majster , kontakt Dobry Majster , kontakt" />
+<meta name="author" lang="pl" content="Dobry Majster - Apple Service Warszawa" />
+    <link rel="canonical" href="https://iphone.waw.pl/opinie">
+{% endblock %}
+{% block title %}{% trans "Dobry Majster Serwis - Opinie" %}{% endblock %}
+
+
+{% block content %}
+<section class="section-block-grey" style="padding-top: 40px; padding-bottom: 40px">
+    <div class="container">
+        <h1 class="text-center" style="margin-bottom: 20px">{% trans "Opinie o nas" %}</h1>
+        <div class="review-blocks">
+        <div class="col-xl-6 xol-lg-6 col-md-6">
+            {% for el in reviews %}
+            {% if el.choise == 'Google' %}
+                <div class="review-box">
+                    <div class="name-review">
+                        <h4>{{ el.name }}</h4>
+                        <img src="{% static 'main/img/logos/google-logo.png' %}">
+                    </div>
+                    <ul class="review-rate">
+                        {% if el.rating == '1' %}
+                        <li><i class="fa fa-star"></i></li>
+                        {% elif el.rating == '2' %}
+                        <li><i class="fa fa-star"></i></li>
+                        <li><i class="fa fa-star"></i></li>
+                        {% elif el.rating == '3' %}
+                        <li><i class="fa fa-star"></i></li>
+                        <li><i class="fa fa-star"></i></li>
+                        <li><i class="fa fa-star"></i></li>
+                        {% elif el.rating == '4' %}
+                        <li><i class="fa fa-star"></i></li>
+                        <li><i class="fa fa-star"></i></li>
+                        <li><i class="fa fa-star"></i></li>
+                        <li><i class="fa fa-star"></i></li>
+                        {% elif el.rating == '5' %}
+                        <li><i class="fa fa-star"></i></li>
+                        <li><i class="fa fa-star"></i></li>
+                        <li><i class="fa fa-star"></i></li>
+                        <li><i class="fa fa-star"></i></li>
+                        <li><i class="fa fa-star"></i></li>
+                        {% else %}
+                        <li><i class="fa fa-star"></i></li>
+                        <li><i class="fa fa-star"></i></li>
+                        <li><i class="fa fa-star"></i></li>
+                        <li><i class="fa fa-star"></i></li>
+                        <li><i class="fa fa-star"></i></li>
+                        {% endif %}
+                    </ul>
+                    <p class="review-text">
+                        {{ el.desc }}
+                    </p>
+                </div>
+            {% else %}
+            {% endif %}
+            {% endfor %}
+            <div class="col-12 text-center">
+            <a href="https://www.google.pl/maps/place/Dobry+Majster/@52.24265,20.9899809,17z/data=!4m7!3m6!1s0x471ecd320b613705:0x8797eb04fd58cb25!8m2!3d52.24265!4d20.9921749!9m1!1b1?hl=pl"
+               target="_blank">
+                <button class="all-review-btn">{% trans "Zobacz wszystkie opinie" %}<img src="{% static 'main/img/logos/google-logo.png' %}"></button>
+            </a>
+            </div>
+            </div>
+            <div class="col-xl-6 xol-lg-6 col-md-6">
+                {% for el in reviews %}
+                {% if el.choise == 'Facebook' %}
+                <div class="review-box">
+                    <div class="name-review">
+                        <h4>{{ el.name }}</h4>
+                        <img src="{% static 'main/img/logos/facebook-logo.png' %}">
+                    </div>
+                    <ul class="review-rate">
+                        {% if el.rating == '1' %}
+                        <li><i class="fa fa-star"></i></li>
+                        {% elif el.rating == '2' %}
+                        <li><i class="fa fa-star"></i></li>
+                        <li><i class="fa fa-star"></i></li>
+                        {% elif el.rating == '3' %}
+                        <li><i class="fa fa-star"></i></li>
+                        <li><i class="fa fa-star"></i></li>
+                        <li><i class="fa fa-star"></i></li>
+                        {% elif el.rating == '4' %}
+                        <li><i class="fa fa-star"></i></li>
+                        <li><i class="fa fa-star"></i></li>
+                        <li><i class="fa fa-star"></i></li>
+                        <li><i class="fa fa-star"></i></li>
+                        {% elif el.rating == '5' %}
+                        <li><i class="fa fa-star"></i></li>
+                        <li><i class="fa fa-star"></i></li>
+                        <li><i class="fa fa-star"></i></li>
+                        <li><i class="fa fa-star"></i></li>
+                        <li><i class="fa fa-star"></i></li>
+                        {% else %}
+                        <li><i class="fa fa-star"></i></li>
+                        <li><i class="fa fa-star"></i></li>
+                        <li><i class="fa fa-star"></i></li>
+                        <li><i class="fa fa-star"></i></li>
+                        <li><i class="fa fa-star"></i></li>
+                        {% endif %}
+                    </ul>
+                    <p class="review-text">
+                        {{ el.desc }}
+                    </p>
+                </div>
+            {% else %}
+            {% endif %}
+            {% endfor %}
+                 <div class="col-12 text-center">
+            <a href="https://www.facebook.com/dmajsterpl"
+               target="_blank">
+                <button class="all-review-btn">{% trans "Zobacz wszystkie opinie" %}<img src="{% static 'main/img/logos/facebook-logo.png' %}"></button>
+            </a>
+            </div>
+    </div>
+        </div>
+    </div>
+</section>
+
+<!-- Map START -->
+<section>
+    <div class="mt-10" id="map">
+        <iframe allowfullscreen=""
+                aria-hidden="false" frameborder="0"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2443.0403921997586!2d20.989986215745816!3d52.24264997976272!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471ecc7ddd0790b1%3A0xe6ea4f260f2088c1!2sal.%20Jana%20Paw%C5%82a%20II%2041A%2C%2001-008%20Warszawa!5e0!3m2!1spl!2spl!4v1613293843441!5m2!1spl!2spl"
+                style="border:0;" tabindex="0"></iframe>
+    </div>
+</section>
+<!-- Map END -->
+{% endblock %}

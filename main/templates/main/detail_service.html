@@ -1,0 +1,169 @@
+{% extends 'main/base/base.html' %}
+{% load static %}
+{% load i18n %}
+{% load thumbnail %}
+{% block head %}
+  <meta name="description" content="Dobry Majster - Apple Service Warszawa. Naprawa telefonów , laptopów , tabletów Apple Warszawa. Telefon: ☎ +48 795 010 707"/>
+  <meta name="keywords" content="Apple , naprawa Apple , naprawa Apple Warszawa , serwis , service , naprawa laptopów , naprawa komórek , naprawa telefonów Warszawa , Dobry Majster , usługi , iPhone , iPad , AppleWatch , MacBook" />
+  <meta name="author" lang="pl" content="Dobry Majster - Apple Service Warszawa" />
+    <link rel="canonical" href="https://iphone.waw.pl/{{ service.category.slug }}/{{ service.slug }}">
+{% endblock %}
+{% block title %}{% trans "Dobry Majster Serwis -" %} {{ service.name }}{% endblock %}
+{% block content %}
+  <div class="container detail_service_title">
+    <div class="col-12 text-center">
+      <h3>{{ service.name }}</h3>
+      <div class="section-heading-line"></div>
+      {% if service.promo %}
+        <div class="col-12 promo">
+          <p>{{ service.promo|safe }}</p>
+        </div>
+      {% else %}
+      {% endif %}
+    </div>
+  </div>
+  <div class="container table_service">
+    <div class="row">
+      {% if service.stolbiec.all %}
+        <!--- Table service desktop START --->
+        <table class="table service_table">
+          <thead>
+          <tr>
+            {% for el in service.stolbiec.all %}
+              {% if el.stolbik %}
+                <th scope="col-xs-12" class="text-left">{{ el.stolbik }}</th>
+              {% else %}
+                <th scope="col" style="display: none"></th>
+              {% endif %}
+            {% endfor %}
+            <th> </th>
+          </tr>
+          </thead>
+          <tbody>
+          <style>
+          @media (max-width: 500px) {
+          {% for el in service.stolbiec.all %}
+              {% if el.stolbik %}
+                  td:nth-of-type({{ forloop.counter }}):before {
+                      content: "{{ el.stolbik }}: ";
+                      font-weight: bold;
+                  }
+              {% endif %}
+          {% endfor %}
+          }
+          </style>
+          {% for el in service.stolbiec.all %}
+            <tr class="col-xs-12 rows">
+              {% for a in el.rows.all %}
+                <td class="service_cost col-xs-12" style="">{{ a.row }}</td>
+              {% endfor %}
+              {% for a in el.rows.all %}
+                {% if a.choise == 'Dodać przycisk' %}
+                  <td style="text-align: end"><button onclick="PopUpOrderShow(this)" id="device" value="{{ a.row }}" class="btn-primary btn-order">{% trans "Zamówić" %}</button></td>
+                {% else %}
+                {% endif %}
+              {% endfor %}
+            </tr>
+          {% endfor %}
+          </tbody>
+        </table>
+      {% else %}
+      {% endif %}
+      <div class="b-popup" id="order-popups">
+        <a class="close_popup right" href="javascript:PopUpOrderHide()"><i class="fa fa-times"></i></a>
+        <div class="b-popup-content">
+          <div>
+            <form class="form" method="post">
+              {% csrf_token %}
+              <h5 class="text-center">{% trans "Usługa:" %}</h5>
+              <input id="service-input" class="item_form" name="services" type="text" value="{{ service.name }}" readonly>
+              <h5 class="text-center">{% trans "Model Urządzenia:" %}</h5>
+              <input id="device-name-input" class="item_form" name="device" type="text" value="" readonly>
+              <div class="row">
+                <div class="col-md-12">
+                  <input class="form-control-popup" name="name" placeholder="{% trans "Imię*" %}" type="text" required>
+                </div>
+                <div class="col-md-12">
+                  <input class="form-control-popup" name="phone" placeholder="{% trans "Numer Kontaktowy*" %}"
+                         type="text" required>
+                </div>
+                <div class="col-md-12 check_privacy_policy">
+                  <input id="check_privacy_1" type="checkbox" required>
+                  <label id="privacy">{% trans "Wyrażam zgodę na przetwarzanie moich danych osobowych przez firmę Dobry Majster sp. z o.o. z siedzibą w Warszawie, al. Jana Pawła II 41a, 01-008 w celu odpowiedzi na zapytanie ofertowe. Podanie danych jest dobrowolne, ale niezbędne do przetworzenia zapytania i realizacji usługi. Szczegółowe informacje dotyczące zakresu i celów przetwarzania przez nas danych osobowych oraz uprawnień przysługujących osobom których dane dotyczą znajdują się naszej" %} <a href="{% url 'privacy-policy' %}">{% trans "polityce prywatności" %}</a></label>
+                </div>
+                <div class="col-md-12">
+                  <div class="center-holder">
+                    <input type="submit" class="btn-primary btn-order btn-order popup-btn" value="{% trans "Zamówić" %}" disabled>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      {#      {% else %}#}
+      {#      {% endif %}#}
+      <div class="feedback-box">
+        <div class="row">
+          <div>
+            <h3 class="text-center">{% trans "Umów się na wizytę" %}</h3>
+            <form class="feedback-form" method="post">
+              {% csrf_token %}
+              <div class="row form">
+                <div class="col-md-12">
+                  <input class="form-control" name="name" placeholder="{% trans "Imię Nazwisko" %}" type="text">
+                </div>
+
+                <div class="col-md-6 col-sm-6 col-12">
+                  <input class="form-control" name="phone" placeholder="{% trans "Numer kontaktowy*" %}" type="tel" required>
+                </div>
+                <div class="col-md-6 col-sm-6 col-12">
+                  <input class="form-control" name="email" placeholder="{% trans "E-mail" %}" type="email">
+                </div>
+                <div class="col-md-6">
+                  <input class="form-control" name="model" placeholder="{% trans "Model urządzenia" %}" type="text">
+                </div>
+                <div class="col-md-6 date_time">
+                  <input name="datetime" type="text" id="picker" class="form-control" placeholder="{% trans "Wybierz termin" %}">
+                </div>
+                <div class="col-md-12">
+                  <textarea class="textarea-form-control" name="message" placeholder="{% trans "Opis problemu" %}"></textarea>
+                </div>
+                <div class="col-md-12 check_privacy_policy">
+                  <input id="check_privacy_3" type="checkbox" required>
+                  <label id="privacy_1">{% trans "Wyrażam zgodę na przetwarzanie moich danych osobowych przez firmę Dobry Majster sp. z o.o. z siedzibą w Warszawie, al. Jana Pawła II 41a, 01-008 w celu odpowiedzi na zapytanie ofertowe. Podanie danych jest dobrowolne, ale niezbędne do przetworzenia zapytania i realizacji usługi. Szczegółowe informacje dotyczące zakresu i celów przetwarzania przez nas danych osobowych oraz uprawnień przysługujących osobom których dane dotyczą znajdują się naszej" %} <a href="{% url 'privacy-policy' %}">{% trans "polityce prywatności" %}</a></label>
+                </div>
+                <div class="col-md-12 mb-30">
+                  <div class="center-holder">
+                    <input type="submit" class="popup-btn-3 button" value="{% trans "Umów wizytę" %}" disabled style="color: #FFF !important;">
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      {% if service.title and service.text and service.image %}
+        <div class="container">
+          <div class="service-list-simple">
+            <div class="row">
+              <div class="col-12">
+                <div class="blog-list-simple-img img_service_detail">
+                  {% thumbnail service.image "550x400" crop="center" as im %}
+                    <img class="img-left rounded-border shadow-primary" src="{{ im.url }}" alt="img">
+                  {% endthumbnail %}
+                </div>
+                <div class="service-list-simple-text">
+                  <h4>{{ service.title }}</h4>
+                  <div class="section-heading-line-left line_service_detail"></div>
+                  <p>{{ service.text|safe }}</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      {% else %}
+      {% endif %}
+    </div>
+  </div>
+{% endblock %}

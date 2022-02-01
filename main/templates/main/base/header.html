@@ -1,0 +1,263 @@
+{% load i18n %}
+{% load static %}
+{% load thumbnail %}
+
+<!-- Top-Bar START -->
+<div class="hidden-sm-down" id="top-bar">
+  <div class="container" style="height: 70px">
+    <div class="row" style="height: 70px">
+      <div class="col-md-9 col-12" style="height: 70px">
+        <div class="top-bar-welcome">
+          <ul>
+            <li><a href="{% url 'contact' %}">{% trans "Skontaktuj się z nami" %}</a></li>
+          </ul>
+        </div>
+        <div class="top-bar-info">
+          <ul>
+            <li><i class="fa fa-phone"></i><a href="tel:+48795010707">+48 795 010 707</a></li>
+            <li><i class="fa fa-envelope"></i><a href="mailto: dmajster.pl@gmail.com">dmajster.pl@gmail.com</a></li>
+            <li>{% trans  'Subskrybuj:' %}</li>
+            <li><a href="https://www.facebook.com/dmajsterpl" target="_blank"><i style="color:#fff;" class="fa fa-facebook"></i></a></li>
+            <li><a href="https://www.instagram.com/dobry.majster" target="_blank"><i style="color:#fff;" class="fa fa-instagram"></i></a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-md-3 col-12" style="height: 60px">
+        <nav class="container navigation navigation_language" id="navigation3" style="height: 70px">
+          <div class="nav-menus-wrapper">
+            <ul class="nav-menu">
+              <!-- Launguage START -->
+              <li>
+                {% get_current_language as LANGUAGE_CODE %}
+                {% get_available_languages as LANGUAGES %}
+                {% get_language_info_list for LANGUAGES as languages %}
+                {% if LANGUAGE_CODE == 'pl' %}
+                  <a href="#" data-toggle="dropdown" role="button"
+                     aria-expanded="false">
+                    <img loading="lazy" class="img_flags" src="{% static 'main/img/flags/pl-flag.png' %}" alt="PL">&nbsp; Polski</a>
+                {% endif %}
+                {% if LANGUAGE_CODE == 'uk' %}
+                  <a href="#" data-toggle="dropdown" role="button"
+                     aria-expanded="false">
+                    <img loading="lazy" class="img_flags" src="{% static 'main/img/flags/uk-flag.png' %}" alt="UK">&nbsp;
+                      Українська</a>
+                {% endif %}
+                {% if LANGUAGE_CODE == 'ru' %}
+                  <a href="#" data-toggle="dropdown" role="button"
+                     aria-expanded="false">
+                    <img loading="lazy" class="img_flags" src="{% static 'main/img/flags/ru-flag.png' %}" alt="RU">&nbsp;
+                    Русский</a>
+                {% endif %}
+                {% if LANGUAGE_CODE == 'en' %}
+                  <a href="#" data-toggle="dropdown" role="button"
+                     aria-expanded="false">
+                    <img loading="lazy" class="img_flags" src="{% static 'main/img/flags/en-flag.png' %}" alt="EN">&nbsp;
+                    English</a>
+                {% endif %}
+                <ul class="nav-dropdown" style="margin-top: -23px">
+                  {% get_current_language as LANGUAGE_CODE %}
+                  {% get_available_languages as LANGUAGES %}
+                  {% get_language_info_list for LANGUAGES as languages %}
+                  {% for language in languages %}
+                    {% if language.code != LANGUAGE_CODE %}
+                      {% with 'main/img/flags/'|add:language.code|add:'-flag.png' as image_static %}
+                        {% if LANGUAGE_CODE == 'pl' %}
+                          <li>
+                            <a href="/{{ language.code }}{{ request.get_full_path|slice:'0:' }}"
+                               lang="{{ language.code }}" style="padding: 10px 10px; color: #FFFFFF;">
+                              <img loading="lazy" class="img_flags" src="{% static image_static %}"
+                                   style="vertical-align:sub" alt="">
+                              {{ language.name_local }}
+                            </a>
+                          </li>
+                        {% else %}
+                          <li>
+                            {% if language.code == 'pl' %}
+                              <a href="{{ request.get_full_path|slice:'3:' }}"
+                                 lang="{{ language.code }}" style="padding: 10px 10px; color: #FFFFFF;">
+                                <img loading="lazy" class="img_flags" src="{% static image_static %}"
+                                     style="vertical-align:sub" alt="">
+                                {{ language.name_local }}
+                              </a>
+                            {% else %}
+                              <a href="/{{ language.code }}{{ request.get_full_path|slice:'3:' }}"
+                                 lang="{{ language.code }}" style="padding: 10px 10px; color: #FFFFFF;">
+                                <img loading="lazy" class="img_flags" src="{% static image_static %}"
+                                     style="vertical-align:sub" alt="">
+                                {{ language.name_local }}
+                              </a>
+                            {% endif %}
+                          </li>
+                        {% endif %}
+                      {% endwith %}
+                    {% endif %}
+                  {% endfor %}
+                </ul>
+              </li>
+              <!-- Launguage END -->
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Top-Bar END -->
+<!-- Navbar START -->
+<header>
+  <nav class="container navigation" id="navigation4">
+    <div class="nav-header">
+      <a class="nav-brand" href="{% url 'home' %}">
+        <img alt="logo" class="main-logo" id="main_logo" src="{% static 'main/img/logos/logo-header.jpg' %}">
+      </a>
+      <div class="nav-toggle"></div>
+    </div>
+    <div class="button_mobile_header">
+      <a href="tel:+48795010707" class="primary-button button-md button_call">{% trans "Zadzwonić" %}</a>
+      <a href="javascript:PopUpShow()" class="primary-button button-md button_call">{% trans "Zamów rozmowę" %}</a>
+    </div>
+      <div class="b-popup" id="order-popup">
+          <a class="close_popup right" href="javascript:PopUpHide()"><i class="fa fa-times"></i></a>
+          <div class="b-popup-content">
+              <div>
+                  <form class="form" method="post">
+                      {% csrf_token %}
+                      <div class="row">
+                          <div class="col-md-12">
+                              <input class="form-control-popup" name="name" placeholder="{% trans "Imię" %}" type="text">
+                          </div>
+                          <div class="col-md-12">
+                              <input class="form-control-popup" name="phone" placeholder="{% trans "Numer Kontaktowy*" %}"
+                                     type="text" required>
+                          </div>
+                          <div class="col-md-12">
+                                    <textarea class="form-control-popup" name="message" placeholder="{% trans "Opis problemu" %}"
+                                              type="text"></textarea>
+                          </div>
+                          <div class="col-md-12 check_privacy_policy">
+                              <input id="check_privacy" type="checkbox" required>
+                              <label id="privacy">{% trans "Wyrażam zgodę na przetwarzanie moich danych osobowych przez firmę Dobry Majster sp. z o.o. z siedzibą w Warszawie, al. Jana Pawła II 41a, 01-008 w celu odpowiedzi na zapytanie ofertowe. Podanie danych jest dobrowolne, ale niezbędne do przetworzenia zapytania i realizacji usługi. Szczegółowe informacje dotyczące zakresu i celów przetwarzania przez nas danych osobowych oraz uprawnień przysługujących osobom których dane dotyczą znajdują się naszej" %} <a href="{% url 'privacy-policy' %}">{% trans "polityce  prywatności" %}</a></label>
+                          </div>
+                          <div class="col-md-12">
+                              <div class="center-holder">
+                                  <input type="submit" class="btn-primary btn-order btn-order popup-btns" value="{% trans "Zamówić" %}"
+                                         disabled>
+                              </div>
+                          </div>
+                      </div>
+                  </form>
+              </div>
+          </div>
+      </div>
+    <div class="nav-menus-wrapper">
+      <ul class="nav-menu">
+        {% for category in categories %}
+          <li>
+            {% if category.sub %}
+              <a href="#">
+                {% thumbnail category.device_icon "40x40" crop="center" as img %}
+                  <img src="/media/{{ img }}" alt="{{ category }}">
+                {% endthumbnail %}
+                {{ category.name }}</a>
+              <ul class="nav-dropdown">
+                {% for service in category.sub.all %}
+                  <li><a href="{% url 'detail_service' category_slug=category.slug service_slug=service.slug %}">{{ service.name }}</a></li>
+                {% endfor %}
+              </ul>
+            {% else %}
+              <a href="{% url 'detail_service_single' category_slug=category.slug %}">
+                {% thumbnail category.device_icon "40x40" crop="center" as icon %}
+                  <img src="/media/{{ icon }}" alt="{{ category }}">
+                {% endthumbnail %}
+                {{ category.name }}</a>
+            {% endif %}
+          </li>
+        {% endfor %}
+        <li><a href="{% url 'shipping' %}">{% trans "Dostawa" %}</a></li>
+        <li><a href="{% url 'accessories' %}">{% trans "Akcesoria" %}</a></li>
+        <li><a href="#">{% trans 'O nas' %}</a>
+          <ul class="nav-dropdown">
+            <li><a href="{% url 'about' %}">{% trans "O nas" %}</a></li>
+            <li><a href="{% url 'blog' %}">{% trans "Blog" %}</a></li>
+            <li><a href="{% url 'team' %}">{% trans "Zespół" %}</a></li>
+            <li><a href="{% url 'work' %}">{% trans "Praca" %}</a></li>
+            <li><a href="{% url 'learning' %}">{% trans "Szkolenie" %}</a></li>
+            <li><a href="{% url 'review' %}">{% trans "Opinie" %}</a></li>
+            <li><a href="{% url 'contact' %}">{% trans "Kontakt" %}</a></li>
+          </ul>
+        </li>
+        <li class="desktop-hide"><a href="{% url 'contact' %}">{% trans "Kontakt" %}</a></li>
+        <!-- Launguage START -->
+        <li class="hidden">
+          {% get_current_language as LANGUAGE_CODE %}
+                {% get_available_languages as LANGUAGES %}
+                {% get_language_info_list for LANGUAGES as languages %}
+                {% if LANGUAGE_CODE == 'pl' %}
+                  <a href="#" data-toggle="dropdown" role="button"
+                     aria-expanded="false">
+                    <img loading="lazy" class="img_flags" src="{% static 'main/img/flags/pl-flag.png' %}" alt="PL">&nbsp; Polski</a>
+                {% endif %}
+                {% if LANGUAGE_CODE == 'ru' %}
+                  <a href="#" data-toggle="dropdown" role="button"
+                     aria-expanded="false">
+                    <img loading="lazy" class="img_flags" src="{% static 'main/img/flags/ru-flag.png' %}" alt="RU">&nbsp;
+                    Русский</a>
+                {% endif %}
+                {% if LANGUAGE_CODE == 'uk' %}
+                  <a href="#" data-toggle="dropdown" role="button"
+                     aria-expanded="false">
+                    <img loading="lazy" class="img_flags" src="{% static 'main/img/flags/uk-flag.png' %}" alt="UK">&nbsp;
+                    Украинский</a>
+                {% endif %}
+                {% if LANGUAGE_CODE == 'en' %}
+                  <a href="#" data-toggle="dropdown" role="button"
+                     aria-expanded="false">
+                    <img loading="lazy" class="img_flags" src="{% static 'main/img/flags/en-flag.png' %}" alt="EN">&nbsp;
+                    English</a>
+                {% endif %}
+                <ul class="nav-dropdown" style="color: #000">
+                  {% get_current_language as LANGUAGE_CODE %}
+                  {% get_available_languages as LANGUAGES %}
+                  {% get_language_info_list for LANGUAGES as languages %}
+                  {% for language in languages %}
+                    {% if language.code != LANGUAGE_CODE %}
+                      {% with 'main/img/flags/'|add:language.code|add:'-flag.png' as image_static %}
+                        {% if LANGUAGE_CODE == 'pl' %}
+                          <li>
+                            <a href="/{{ language.code }}{{ request.get_full_path|slice:'0:' }}"
+                               lang="{{ language.code }}" style="padding: 10px 24px; color: #000;font-family: 'Noto Sans';text-transform: uppercase;font-weight: 700;">
+                              <img loading="lazy" class="img_flags" src="{% static image_static %}"
+                                   style="vertical-align:sub" alt="">
+                              {{ language.name_local }}
+                            </a>
+                          </li>
+                        {% else %}
+                          <li>
+                            {% if language.code == 'pl' %}
+                              <a href="{{ request.get_full_path|slice:'3:' }}"
+                                 lang="{{ language.code }}" style="padding: 10px 24px; color: #000;font-family: 'Noto Sans';text-transform: uppercase;font-weight: 700;">
+                                <img loading="lazy" class="img_flags" src="{% static image_static %}"
+                                     style="vertical-align:sub" alt="">
+                                {{ language.name_local }}
+                              </a>
+                            {% else %}
+                              <a href="/{{ language.code }}{{ request.get_full_path|slice:'3:' }}"
+                                 lang="{{ language.code }}" style="padding: 10px 24px; color: #000;font-family: 'Noto Sans';text-transform: uppercase;font-weight: 700;">
+                                <img loading="lazy" class="img_flags" src="{% static image_static %}"
+                                     style="vertical-align:sub" alt="">
+                                {{ language.name_local }}
+                              </a>
+                            {% endif %}
+                          </li>
+                        {% endif %}
+                      {% endwith %}
+                    {% endif %}
+                  {% endfor %}
+          </ul>
+        </li>
+        <!-- Launguage END -->
+      </ul>
+    </div>
+  </nav>
+</header>
+<!-- Navbar END -->

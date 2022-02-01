@@ -1,0 +1,71 @@
+{% load static %}
+{% load i18n %}
+<!-- Footer START -->
+<footer>
+    <div class="container">
+        <div class="row">
+            <!-- Column 1 Start -->
+            <div class="col-md-2 col-sm-4 col-12 footer_about">
+                <div class="mt-25">
+                    <img alt="footer-logo" class="logo-footer text-center" src="{% static 'main/img/logos/logo.png' %}">
+                </div>
+            </div>
+            <!-- Column 1 End -->
+
+            <!-- Column 2 Start -->
+            <div class="col-md-4 col-sm-8 col-12 footer_about">
+                <h3>Dobry Majster SERWIS iPhone</h3>
+                <div class="mt-25">
+                    <p class="mt-25" style="font-size: 16px!important;">{% trans "Apple serwis Warszawa – jesteśmy po Twojej stronie" %}</p>
+                </div>
+                <div class="footer-social-icons mt-25">
+                    <ul>
+                        <li><a href="https://www.facebook.com/dmajsterpl" target="_blank"><i class="fa fa-facebook-square"></i></a></li>
+                        <b>{% trans "Nasz Facebook" %}</b>
+                    </ul>
+                    <ul>
+                        <li><a href="https://www.instagram.com/dobry.majster" target="_blank"><i class="fa fa-instagram"></i></a></li>
+                        <b>{% trans "Nasz Instagram" %}</b>
+                    </ul>
+                </div>
+            </div>
+            <!-- Column 2 End -->
+
+            <!-- Column 3 Start -->
+            <div class="col-md-2 col-sm-6 col-12 footer_links">
+                <h3>{% trans 'Strony' %}</h3>
+                <ul class="footer-list">
+                    <li><a href="{% url 'home' %}">{% trans "Główna" %}</a></li>
+                    <li><a href="{% url 'about' %}">{% trans "O nas" %}</a></li>
+                    <li><a href="{% url 'blog' %}">{% trans "Blog" %}</a></li>
+                    <li><a href="{% url 'work' %}">{% trans "Praca" %}</a></li>
+                    <li><a href="{% url 'privacy-policy' %}">{% trans "Polityka prywatnośći" %}</a></li>
+                </ul>
+            </div>
+            <!-- Column 3 End -->
+
+            <!-- Column 4 Start -->
+            <div class="col-md-4 col-sm-6 col-12 footer_address">
+                <h3>{% trans "Kontakt" %}</h3>
+                <div class="footer-tags mt-25">
+                    <p>Serwis iPhone  |  Dobry Majster</p>
+                    <p>Warszawa, CH Pasaż Muranów</p>
+                    <p>al. Jana Pawła II, 41a, {% trans "Lokal" %} 3a</p>
+                    <p>{% trans "(1 piętro, nad Carrefour express)" %}</p>
+                    <p>{% trans "przystanek „Kino Femina”" %}</p>
+                    <p style="margin-top: 10px"><a class="footer_phone" href="tel:+48 795 010 707"><i class="fa fa-phone"></i>+48 795 010 707</a></p>
+                    <p style="margin-top: 10px">{% trans "Pn - Pt:" %}   <span style="margin-left: 5px">9:00-19:00</span></p>
+                    <p>{% trans "Sb:" %}<span style="margin-left: 36px">9:00-17:00</span></p>
+                </div>
+            </div>
+            <!-- Column 4 End -->
+        </div>
+
+        <!-- Footer Bar Start -->
+        <div class="footer-bar text-center">
+            <p><a href="{% url 'home' %}">Serwis iPhone Dobry Majster</a> © 2021. All Rights Reserved.</p>
+            <p>Designed by <a href="https://www.kadmix.pl/pl/" target="_blank" rel="nofollow">Kadmix</a></p>
+        </div>
+        <!-- Footer Bar End -->
+    </div>
+</footer>

@@ -1,0 +1,46 @@
+{% extends 'main/base/base.html' %}
+{% load static %}
+{% load i18n %}
+{% load thumbnail %}
+{% block head %}
+<meta name="description" content="Dobry Majster - Apple Service Warszawa. Naprawa telefonów , laptopów , tabletów Apple Warszawa. Telefon: ☎ +48 795 010 707"/>
+<meta name="keywords" content="Apple , naprawa Apple , naprawa Apple Warszawa , serwis , service , naprawa laptopów , naprawa komórek , naprawa telefonów Warszawa , Dobry Majster , kontakt Dobry Majster , kontakt" />
+<meta name="author" lang="pl" content="Dobry Majster - Apple Service Warszawa" />
+    <link rel="canonical" href="https://iphone.waw.pl/praca">
+{% endblock %}
+{% block title %}{% trans "Dobry Majster Serwis - Praca" %}{% endblock %}
+
+
+{% block content %}
+<div class="section-block" style="padding-top: 30px; padding-bottom: 30px">
+    <div class="container">
+        {% if work %}
+        <h1 class="text-center">{% trans "Nazse oferty pracy" %}</h1>
+        <div class="section-heading-line"></div>
+        {% for el in work %}
+         <div class="container learning">
+            <div class="blog-list-simple">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="blog-list-simple-img">
+                            {% thumbnail el.image "550x400" crop="center" as im %}
+                            <img class="img-right rounded-border shadow-primary" src="{{ im.url }}" alt="img" style="margin-top: 10px">
+                            {% endthumbnail %}
+                        </div>
+                        <div class="blog-list-simple-text">
+                            <h4>{{ el.name }}</h4>
+                            <div class="section-heading-line-left"></div>
+                            <p>{{ el.desc|safe }}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+        {% endfor %}
+        {% else %}
+        <h1 class="text-center">{% trans "Na razie nie prowadzimy rekrutacji" %}</h1>
+        {% endif %}
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,1507 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-07-20 14:32+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=4; plural=(n % 1 == 0 && n % 10 == 1 && n % 100 != "
+"11 ? 0 : n % 1 == 0 && n % 10 >= 2 && n % 10 <= 4 && (n % 100 < 12 || n % "
+"100 > 14) ? 1 : n % 1 == 0 && (n % 10 ==0 || (n % 10 >=5 && n % 10 <=9) || "
+"(n % 100 >=11 && n % 100 <=14 )) ? 2: 3);\n"
+
+#: iphone_waw_pl/settings.py:129
+msgid "Polish"
+msgstr ""
+
+#: iphone_waw_pl/settings.py:130
+msgid "Russian"
+msgstr ""
+
+#: iphone_waw_pl/settings.py:131
+msgid "Ukrainian"
+msgstr ""
+
+#: iphone_waw_pl/settings.py:132
+msgid "English"
+msgstr ""
+
+#: main/templates/main/about_us.html:11
+msgid "Dobry Majster Serwis - O Nas"
+msgstr "Dobry Majster Serwis - Про нас"
+
+#: main/templates/main/about_us.html:25 main/templates/main/base/footer.html:39
+#: main/templates/main/base/header.html:178
+#: main/templates/main/base/header.html:180 main/templates/main/index.html:54
+msgid "O nas"
+msgstr "Про нас"
+
+#: main/templates/main/about_us.html:29
+msgid ""
+"Drodzy Klienci, zapraszamy do naszego serwisu urządzeń marki Apple w "
+"Warszawie. Oferujemy wieloletnie doświadczenie w połączeniu z pasją do "
+"nowych technologii, dzięki czemu zapewniamy fachową i skuteczną naprawę "
+"iPhonów i innych sprzętów marki Apple. Jesteśmy jednym z najskuteczniejszych "
+"serwisów w Warszawie, gwarantującym jednocześnie atrakcyjne ceny i szybki "
+"termin realizacji usługi."
+msgstr ""
+"Шановні покупці, запрошуємо вас в наш сервіс пристроїв Apple в Варшаві. Ми "
+"пропонуємо багаторічнийдосвід в поєднанні з пристрастю до нових технологій, "
+"завдяки яким ми забезпечуємо професійний таефективний ремонт iPhone та "
+"іншого обладнання Apple. Ми є одним з найефективніших сервісних центрів "
+"уВаршаві, гарантуючи при цьому привабливі ціни і швидку доставку."
+
+#: main/templates/main/about_us.html:36
+msgid ""
+"W naszej ofercie znajdziecie szeroki zakres usług związanych z naprawą "
+"iPhonów, iPadów, Macbookówczy iWatchy. Do każdego Klienta podchodzimy "
+"indywidualnie, skutecznie lokalizując źródłoproblemu i naprawiając "
+"urządzenie od ręki lub – w przypadku poważniejszej awarii – w możliwie "
+"najkrótszym czasie. Dzięki dużej bazie części zapasowych możemy zabrać się "
+"do wymiany komponentów od razu po wykryciu usterki – nie musimy czekać na "
+"dostawę odpowiedniej części. Znacznie skraca to czas naprawy, a tym samy "
+"przyspiesza odzyskanie sprawnego i odświeżonego sprzętu przez jego "
+"właściciela."
+msgstr ""
+"Наша пропозиція включає в себе широкий спектр послуг, пов'язаних з ремонтом "
+"iPhone, iPad, Macbook іiWatch. Ми підходимо до кожного клієнта "
+"індивідуально, ефективно визначаючи джерело проблеми іремонтуючи пристрій "
+"негайно або - в разі серйозної поломки - в найкоротші терміни. Завдяки "
+"великій базізапчастин ми можемо приступити до заміни компонентів відразу "
+"після виявлення дефекту - нам не потрібночекати доставки відповідної деталі. "
+"Це значно скорочує час ремонту, а значить, прискорює "
+"відновленняпрацездатного і оновленого обладнання його власником."
+
+#: main/templates/main/about_us.html:37
+msgid "Oferujemy między innymi:"
+msgstr "Також пропонуємо:"
+
+#: main/templates/main/about_us.html:51
+msgid ""
+"Nasza oferta dotyczy wszystkich sprzętów od Apple. Co ważne – diagnostykę "
+"wykonujemy BEZPŁATNIE! Jeśli po weryfikacji Twój sprzęt okaże się sprawny, "
+"nie zapłacisz ani złotówki. A jeśli podejmiemy się naprawy, zaoferujemy "
+"także 30-dniową gwarancję na wykonaną usługę."
+msgstr ""
+"Наша пропозиція поширюється на всі обладнання Apple. Найголовніше що "
+"діагностику - робимоБЕЗКОШТОВНО! Якщо після перевірки ваше обладнання "
+"виявиться працездатним, ви не заплатитежодного злотого. А якщо ми візьмемося "
+"за ремонт, ми також дамо 30-денну гарантію на надані послуги."
+
+#: main/templates/main/about_us.html:53
+msgid ""
+"Nasza specjalność to naprawa iPhone’ów i innych sprzętów Apple. Warszawa nie "
+"ma drugiego takiego serwisu, dlatego zachęcamy do kontaktu i umówienia się "
+"na dogodny termin realizacji usługi serwisowej. Zadbamy o Twój sprzęt tak, "
+"byś nie musiał się martwić o jego sprawność i komfort użytkowania. "
+"Zapewniamy, że „jabłuszko” nie ma przed nami żadnych tajemnic! ;)"
+msgstr ""
+"Ми спеціалізуємося на ремонті iPhone і інших пристроїв Apple. У Варшаві "
+"немає другого такого сервісу,тому ми рекомендуємо вам зв'язатися з нами і "
+"призначити зручну дату для ремонту або діагностики. Миподбаємо про ваше "
+"обладнання, щоб вам не довелося турбуватися про його ефективність і "
+"зручність увикористанні. Запевняємо вас, що у «яблука» немає для нас "
+"секретів! ;)"
+
+#: main/templates/main/accessories.html:10
+msgid "Dobry Majster Serwis - Akcesoria"
+msgstr "Dobry Majster Сервіс - Аксесуари"
+
+#: main/templates/main/accessories.html:18
+msgid ""
+"Oferujemy szeroki wybór towarów najlepszej jakości w atrakcyjnych cenach."
+msgstr ""
+"Ми пропонуємо широкий вибір товарів найкращої якості за привабливими цінами."
+
+#: main/templates/main/accessories.html:21
+msgid "U nas kupisz:"
+msgstr "У нас придбаєш:"
+
+#: main/templates/main/accessories.html:28
+msgid "Zapraszamy do naszego Instagram"
+msgstr "Запрошуємо до нашого Instagram"
+
+#: main/templates/main/accessories.html:35
+msgid "Na razie nie mamy żadnych akcesoriów do sprzedaży"
+msgstr "Поки що ми не маємо аксесури на продаж"
+
+#: main/templates/main/base/footer.html:19
+msgid "Apple serwis Warszawa – jesteśmy po Twojej stronie"
+msgstr "Сервіс Apple Варшава - ми на вашому боці"
+
+#: main/templates/main/base/footer.html:24 main/templates/main/contact.html:136
+msgid "Nasz Facebook"
+msgstr "Наш Facebook"
+
+#: main/templates/main/base/footer.html:28 main/templates/main/contact.html:140
+msgid "Nasz Instagram"
+msgstr "Наш Instagram"
+
+#: main/templates/main/base/footer.html:36
+msgid "Strony"
+msgstr "Сторінки"
+
+#: main/templates/main/base/footer.html:38
+msgid "Główna"
+msgstr "Головна"
+
+#: main/templates/main/base/footer.html:40
+#: main/templates/main/base/header.html:181
+msgid "Blog"
+msgstr "Блог"
+
+#: main/templates/main/base/footer.html:41
+#: main/templates/main/base/header.html:183
+msgid "Praca"
+msgstr "Праця"
+
+#: main/templates/main/base/footer.html:42
+msgid "Polityka prywatnośći"
+msgstr "Політика конфіденційності"
+
+#: main/templates/main/base/footer.html:49
+#: main/templates/main/base/header.html:186
+#: main/templates/main/base/header.html:189 main/templates/main/contact.html:20
+#: main/templates/main/index.html:34 main/templates/main/index.html:107
+#: main/templates/main/sukces.html:19
+msgid "Kontakt"
+msgstr "Контакт"
+
+#: main/templates/main/base/footer.html:53
+msgid "Lokal"
+msgstr "Приміщення"
+
+#: main/templates/main/base/footer.html:54 main/templates/main/contact.html:113
+msgid "(1 piętro, nad Carrefour express)"
+msgstr "(1 поверх, над Carrefour express"
+
+#: main/templates/main/base/footer.html:55 main/templates/main/contact.html:114
+msgid "przystanek „Kino Femina”"
+msgstr "Зупинка „Kino Femina”"
+
+#: main/templates/main/base/footer.html:57 main/templates/main/contact.html:128
+msgid "Pn - Pt:"
+msgstr "Пн - Пт:"
+
+#: main/templates/main/base/footer.html:58 main/templates/main/contact.html:129
+msgid "Sb:"
+msgstr "Сб:"
+
+#: main/templates/main/base/header.html:12 main/templates/main/contact.html:32
+msgid "Skontaktuj się z nami"
+msgstr "Зв'яжись з нами"
+
+#: main/templates/main/base/header.html:19
+msgid "Subskrybuj:"
+msgstr "Підпишись"
+
+#: main/templates/main/base/header.html:116
+msgid "Zadzwonić"
+msgstr "Задзвонити"
+
+#: main/templates/main/base/header.html:117 main/templates/main/index.html:36
+msgid "Zamów rozmowę"
+msgstr "Замовити розмову"
+
+#: main/templates/main/base/header.html:127
+msgid "Imię"
+msgstr "Ім'я"
+
+#: main/templates/main/base/header.html:130
+#: main/templates/main/detail_service.html:87
+msgid "Numer Kontaktowy*"
+msgstr "Номер телефону*"
+
+#: main/templates/main/base/header.html:134
+#: main/templates/main/detail_service.html:130
+msgid "Opis problemu"
+msgstr "Опис проблеми"
+
+#: main/templates/main/base/header.html:139 main/templates/main/contact.html:58
+#: main/templates/main/detail_service.html:92
+#: main/templates/main/detail_service.html:134
+msgid ""
+"Wyrażam zgodę na przetwarzanie moich danych osobowych przez firmę Dobry "
+"Majster sp. z o.o. z siedzibą w Warszawie, al. Jana Pawła II 41a, 01-008 w "
+"celu odpowiedzi na zapytanie ofertowe. Podanie danych jest dobrowolne, ale "
+"niezbędne do przetworzenia zapytania i realizacji usługi. Szczegółowe "
+"informacje dotyczące zakresu i celów przetwarzania przez nas danych "
+"osobowych oraz uprawnień przysługujących osobom których dane dotyczą "
+"znajdują się naszej"
+msgstr ""
+"Я даю згоду на обробку моїх персональних даних сервісного центру Dobry "
+"Majster sp. Z o.o. який знаходитися в Варшаві, за адресою - al. Jana Pawła "
+"II 41a, 01-008, щоб відповісти на запит. Надання даних є добровільним, але "
+"необхіднимм для обробки запиту і надання послуги. Детальну інформацію про "
+"обсяг і цілі обробки нами персональних даних, а також про права суб'єктів "
+"даних можна знайти в нашій політиці конфіденційності."
+
+#: main/templates/main/base/header.html:139
+msgid "polityce  prywatności"
+msgstr "політикі конфіденційності"
+
+#: main/templates/main/base/header.html:143
+#: main/templates/main/detail_service.html:62
+#: main/templates/main/detail_service.html:96
+msgid "Zamówić"
+msgstr "Замовити"
+
+#: main/templates/main/base/header.html:176
+#: main/templates/main/shipping.html:16
+msgid "Dostawa"
+msgstr "Доставка"
+
+#: main/templates/main/base/header.html:177
+msgid "Akcesoria"
+msgstr "Аксесуари"
+
+#: main/templates/main/base/header.html:182
+msgid "Zespół"
+msgstr "Команда"
+
+#: main/templates/main/base/header.html:184
+msgid "Szkolenie"
+msgstr "Курси"
+
+#: main/templates/main/base/header.html:185 main/templates/main/index.html:175
+msgid "Opinie"
+msgstr "Відгуки"
+
+#: main/templates/main/contact.html:12 main/templates/main/sukces.html:10
+msgid "Dobry Majster Serwis - Kontakt"
+msgstr "Dobry Majster Сервіс - Контакт"
+
+#: main/templates/main/contact.html:41
+msgid "Model urządzenia*"
+msgstr "Модель пристрою*"
+
+#: main/templates/main/contact.html:45
+#: main/templates/main/detail_service.html:84
+msgid "Imię*"
+msgstr "Ім'я*"
+
+#: main/templates/main/contact.html:48
+msgid "E-mail*"
+msgstr "E-mail*"
+
+#: main/templates/main/contact.html:51
+#: main/templates/main/detail_service.html:118
+msgid "Numer kontaktowy*"
+msgstr "Номер телефону*"
+
+#: main/templates/main/contact.html:54
+msgid "Wiadomość"
+msgstr "Повідомлення"
+
+#: main/templates/main/contact.html:58
+#: main/templates/main/detail_service.html:92
+#: main/templates/main/detail_service.html:134
+msgid "polityce prywatności"
+msgstr "Політикі конфіденційності"
+
+#: main/templates/main/contact.html:62
+msgid "Wyślij"
+msgstr "Вислати"
+
+#: main/templates/main/contact.html:81
+msgid "Zadzwoń do nas"
+msgstr "Задзвони до нас"
+
+#: main/templates/main/contact.html:95
+msgid "Napisz do nas"
+msgstr "Напиши до нас"
+
+#: main/templates/main/contact.html:109
+msgid "Nasz adres"
+msgstr "Наша адреса"
+
+#: main/templates/main/contact.html:112
+msgid "Lokal 3a"
+msgstr "Приміщення 3а"
+
+#: main/templates/main/contact.html:127
+msgid "Godziny pracy"
+msgstr "Години праці"
+
+#: main/templates/main/detail_service.html:11
+msgid "Dobry Majster Serwis -"
+msgstr "Dobry Majster Сервіс -"
+
+#: main/templates/main/detail_service.html:78
+msgid "Usługa:"
+msgstr "Послугa:"
+
+#: main/templates/main/detail_service.html:80
+msgid "Model Urządzenia:"
+msgstr "Модель пристрою:"
+
+#: main/templates/main/detail_service.html:109
+msgid "Umów się na wizytę"
+msgstr "Записатись на консультацію"
+
+#: main/templates/main/detail_service.html:114
+msgid "Imię Nazwisko"
+msgstr "Ім'я Прізвище"
+
+#: main/templates/main/detail_service.html:121
+msgid "E-mail"
+msgstr "E-mail"
+
+#: main/templates/main/detail_service.html:124
+msgid "Model urządzenia"
+msgstr "Модель пристрою"
+
+#: main/templates/main/detail_service.html:127
+msgid "Wybierz termin"
+msgstr "Виберіть дату"
+
+#: main/templates/main/detail_service.html:138
+msgid "Umów wizytę"
+msgstr "Записатися"
+
+#: main/templates/main/index.html:11
+msgid "Serwis Apple Warszawa Śródmieście | Naprawa iPhone Warszawa"
+msgstr "Сервіс Apple Варшава Центр міста - чому ми?"
+
+#: main/templates/main/index.html:27
+msgid "Wyjątkowe urządzenia wymagają wyjątkowego traktowania"
+msgstr "Виняткові пристрої вимагають виняткового трактування."
+
+#: main/templates/main/index.html:30
+msgid ""
+"Jeśli więc Twój sprzęt marki Apple odmawia posłuszeństwa albo po prostu "
+"chcesz poddać go konserwacji, serwisowi czy odnowieniu to warto oddać go w "
+"ręce specjalistów."
+msgstr ""
+"Якщо Твій пристій марки Apple відмовляє в роботі або просто ти хочеш віддати "
+"його на діагностику сервісу чи відновленню то варто віддати його в руки "
+"експертам"
+
+#: main/templates/main/index.html:35
+msgid "Zadzwoń"
+msgstr "Задзвонити"
+
+#: main/templates/main/index.html:58 main/templates/main/index.html:83
+msgid ""
+"Jako doświadczony zespół serwisantów potrafimy pomóc Ci z każdą usterką i "
+"rozwiać każdą wątpliwość dotyczącą funkcjonowania Twojego iPhone, iPad, "
+"MacBook, Apple Watch czy Apple TV i wielu innych modeli w gamie giganta z "
+"Cupertino. To właśnie u nas przywrócisz tym urządzeniom ich pierwotną formę, "
+"oszczędzając pieniądze i na nowo ciesząc się funkcjonowaniem tych "
+"niezwykłych gadżetów z logo nadgryzionego jabłka."
+msgstr ""
+"Як досвідчена команда технічних спеціалістів, ми можемо допомогти вам з будь-"
+"якими дефектами та усунути будь-які сумніви щодо функціонування вашого "
+"iPhone, iPad, MacBook, Apple Watch або Apple TV та багатьох інших моделей з "
+"асортименту гіганта Cupertino. Саме тут ви повернете до життя свої пристрої "
+"у первісному вигляді, заощадивши гроші та будете знову насолоджуючись "
+"функціонуванням цих незвичайних пристроїв  із логотипом надкушеного  яблука."
+
+#: main/templates/main/index.html:79
+msgid "Serwis Apple Warszawa"
+msgstr "Сервіс Apple Варшава"
+
+#: main/templates/main/index.html:82
+msgid ""
+"Wyjątkowe urządzenia wymagają wyjątkowego traktowania. Jeśli więc Twój "
+"sprzęt marki Apple odmawia posłuszeństwa albo po prostu chcesz poddać go "
+"konserwacji, serwisowi czy odnowieniu to warto oddać go w ręce specjalistów."
+msgstr ""
+"Виняткові пристрої вимагають виняткового трактування. Якщо Твій пристій "
+"марки Apple відмовляє в роботі або просто ти хочеш віддати його на "
+"діагностику сервісу чи відновленню то варто віддати його в руки експертам"
+
+#: main/templates/main/index.html:100
+msgid "Serwis Apple Warszawa Śródmieście – dlaczego my?"
+msgstr "Сервіс Apple Варшава Центр міста - чому ми?"
+
+#: main/templates/main/index.html:104
+msgid ""
+"Dlaczego to właśnie w nasze ręce możesz powierzyć swoje ulubione urządzenie "
+"z gamy Apple? Ponieważ tak, jak Ty jesteśmy pasjonatami marki. Nie tylko "
+"więc jesteśmy technicznie przygotowani do podjęcia się nawet najbardziej "
+"skomplikowanej naprawy, ale także rozumiemy całą filozofię funkcjonowania "
+"ekosystemu Apple. Dokonując napraw, nie staramy się oszczędzać za wszelką "
+"cenę – to nie „chińszczyzna”, ale sprzęt marki premium, który swoim "
+"działaniem ma sprawiać przyjemność użytkownikowi i na każdym kroku "
+"przypominać, że ma do czynienia z produktem prestiżowym, perfekcyjnie "
+"funkcjonującym w każdym calu. Dlatego najchętniej korzystamy z oryginalnych "
+"części zamiennych, a jeśli to niemożliwe to wybieramy jedynie najwyższej "
+"jakości zamienniki. Przy wszelkich pracach serwisowych i naprawczych ściśle "
+"trzymamy się instrukcji opracowanych przez producenta – tak jak Ty ufamy, że "
+"doskonale opracował on swoje urządzenia i najlepiej wie jak je naprawiać."
+msgstr ""
+"Чому саме в наші руки ти можеш доручити свій улюблений пристрій зі значком "
+"Apple? Оскільки так, як Ти ми теж є поціновучами марки Apple. Не тільки  ми "
+"є технічно, готові до підняття навіть найбільш ускладненого ремонту, але "
+"також ми розуміємо цілу філософію функціонування екосистеми Apple. Вчиняючи "
+"ремонти, ми не стараємося заощаджувати на ціні - то не 'Китайщина', але "
+"пристрої марки преміум, які своєю дією викликають задоволення користувачеві "
+"і на кожному кроці нагадують, що Ви маєте справу з престижним гаджетом, "
+"досконало функціонуючим в кожному дюймі. Тому найбільш охоче ми користуємося "
+"оригінальними запчастинами, а якщо це не можливо то ми вибираємо найвищої "
+"якості копію. При всіляких сервісних і ремонтних роботах ми стисло "
+"тримаємося інструкцій, розроблених виробником, - так як Ти ми довіряємо, що "
+"засновник досконало опрацював свої пристрої і найкраще знає як їх "
+"ремонтувати."
+
+#: main/templates/main/index.html:116
+msgid "Szybka naprawa od ręki"
+msgstr "Швидкий ремонт на місці"
+
+#: main/templates/main/index.html:117
+msgid "Wykonujemy ponad 80"
+msgstr "Більше 80"
+
+#: main/templates/main/index.html:117
+msgid "napraw od ręki w 30 minut"
+msgstr "ремонтів виконуємо впродовж 15-30 хвилин"
+
+#: main/templates/main/index.html:124
+msgid "Infolinia 24h/7 dni"
+msgstr "Інфолiнiя 24часа/7 днів в тиждень"
+
+#: main/templates/main/index.html:125
+msgid "Zdiagnozuj i wyceń on-line!"
+msgstr "Консультація On-line!"
+
+#: main/templates/main/index.html:132
+msgid "Gwarancja do 365 dni"
+msgstr "Гарантія до 365 днів"
+
+#: main/templates/main/index.html:133
+msgid ""
+"Po naprawie nie musisz się o nic martwić, w razie potrzeby usuniemy usterkę "
+"za darmo."
+msgstr ""
+"Даємо гарантію на усі види виконаних робіт впродовж гарантійного терміну"
+
+#: main/templates/main/index.html:140
+msgid "Darmowa diagnoza"
+msgstr "Безкоштовна діагностика"
+
+#: main/templates/main/index.html:141
+msgid "Naprawiamy wszystko - dla nas nie ma rzeczy niemożliwych."
+msgstr "Ремонтуємо все - для нас немає нічого неможливого."
+
+#: main/templates/main/index.html:141
+msgid "Przynieś swój sprzęt, naprawimy każde urządzenie."
+msgstr "Принось свій пристрій, відремонтуємо будь-яку поломку."
+
+#: main/templates/main/index.html:160
+msgid "Apple serwis Warszawa – pomożemy Ci nie tylko z telefonem"
+msgstr "Apple сервіс Варшава -  допоможемо Тобі не тільки з телефоном"
+
+#: main/templates/main/index.html:162
+msgid ""
+"Wysokiej jakości sprzęty Apple to nie tylko iPhone, ale również cieszące się "
+"rosnącym powodzeniem komputery iMac i Mac mini, laptopy MacBook i tablety "
+"iPad. Na szczęście niezależnie od tego, czy posiadasz najnowszy model "
+"któregoś z wymienionych sprzętów, czy urządzenie kilkuletnie u nas możesz "
+"liczyć na pełną dostępność części i akcesoriów i profesjonalną naprawę."
+msgstr ""
+"Високої якості прилади Apple це не тільки iPhone, але також комп'ютери iMac "
+"i Mac mini, ноутбуки MacBook і планшети iPad. На щастя незалежно від того, "
+"чи ти володієш найновшою моделлю будь-якого із згаданих вище гаджетів, чи "
+"декілька літнім пристроєм в нашому сервісі ти можеш розраховувати на повну "
+"доступність запчастин і аксесуарів, і професійний ремонт. "
+
+#: main/templates/main/index.html:162
+msgid ""
+"Niezależnie z jak poważnym problemem masz do czynienia – czy uszkodzenie "
+"płyty głównej, zalanie, uszkodzenie dysku SSD czy HDD, problemy z gniazdem "
+"ładowania lub złączem wyświetlacza, u nas bezstresowo naprawisz swoje "
+"urządzenie. Zdobyte doświadczenie pozwala nam na podjęcie się każdego "
+"rodzaju naprawy – nawet jeśli na pierwszy rzut oka wydaje się ona niezwykle "
+"trudna i czasochłonna. Pomagamy w odzyskiwaniu przypadkowo utraconej "
+"zawartości dysków, ponownej instalacji systemu operacyjnego czy usunięciu "
+"składników, które niepotrzebnie spowalniają Twoje urządzenie."
+msgstr ""
+"Незалежно з як серйозною проблемою ти маєш справу - чи пошкодження головної "
+"плати, залиття, пошкодження диска SSD чи HDD, проблеми з гніздом зарядки або "
+"з конектором дисплею, в нас без стресу - полагодиш свій пристрій. Здобутий "
+"досвід майстів дозволяє нам виконати ремонт будь-якої складності - навіть "
+"якщо на перший погляд здається що це надзвичайно тяжко. Ми допомагаємо в "
+"поверненні випадково втраченої інформації, повторній інсталяції операційної "
+"системи чи усуненні додатків, які непотрібно сповільнюють Твій пристрій. "
+
+#: main/templates/main/index.html:162
+msgid ""
+"Podobnie w przypadku problemów z iPadami. Te doskonałe tablety od Apple "
+"również wymagają niekiedy wymiany ekranu, panelu dotykowego, gniazda "
+"ładowania czy innych elementów, a stosując wysokiej jakości części, można "
+"przywrócić im oryginalne funkcjonowanie i na nowo cieszyć się doskonałą "
+"wydajnością i smukłą pracą. Gwarantujemy Ci, że po wizycie w naszym serwisie "
+"nie będziesz w stanie rozpoznać, że urządzenie miało wcześniej jakiekolwiek "
+"problemy techniczne – jego działanie będzie identyczne, jak świeżo "
+"zakupionego iPada czy MacBooka."
+msgstr ""
+"Ці досконалі планшети від Apple також вимагають інколи заміни екрану, "
+"сенсорної панелі, гнізда зарядки чи інших елементів, а ми використовуємо "
+"високої якості запчастини, завдяки цьому можна відновити їм оригінальне "
+"функціонування і заново радіти досконалою продуктивністю. Ми Гарантуємо "
+"Тобі, що після візиту до нашого сервісу ти не будеш здатний розпізнати, що "
+"пристрій мав раніше які-небудь технічні проблеми - його функціонування буде "
+"ідентичним, як свіжо закупленого iPada чи MacBooka."
+
+#: main/templates/main/index.html:177
+msgid "Co o nas mówią nasi klienci"
+msgstr "Що наші клієнти говорять про нас"
+
+#: main/templates/main/index.html:180 main/templates/main/review.html:66
+#: main/templates/main/review.html:117
+msgid "Zobacz wszystkie opinie"
+msgstr "Переглянути всі відгуки"
+
+#: main/templates/main/index.html:212
+msgid "Serwis iPhone Warszawa"
+msgstr "Сервіс Apple Варшава"
+
+#: main/templates/main/index.html:214
+msgid ""
+"Chyba nie potrafisz wyobrazić sobie codziennego funkcjonowania bez telefonu, "
+"prawda? My też nie, dlatego dokładamy wszelkich starań, by dokonywane przez "
+"nas naprawy odbywały się bez zbędnej zwłoki, ale również profesjonalnie – "
+"tak, by nie było potrzeby szybkiego powrotu do nas z tym samym problemem."
+msgstr ""
+"Навряд ти зумієш уявити собі щоденне функціонування без телефону, правда? Ми "
+"також ні, тому ми докладаємо всіляких зусиль, щоб ремонт твого пристрою, "
+"відбувався без зайвої затримки і також професійно - так, щоб не було потреби "
+"повторного повернення до нас з тією ж самою проблемою. "
+
+#: main/templates/main/index.html:214
+msgid ""
+"W naszym serwisie dbamy o stałą dostępność najczęściej wymienianych "
+"podzespołów – baterii, wyświetlaczy, mikrofonów, głośników czy gniazd "
+"ładowania. Dzięki temu jesteśmy w stanie rozpocząć prace błyskawicznie po "
+"otrzymaniu Twojego iPhone do naprawy i oddać Ci go w maksymalnie krótkim "
+"czasie."
+msgstr ""
+"У нашому сервісі ми дбаємо про постійну доступність найчастіше "
+"використовуючих компонентів при ремонті - батареї, дисплеїв, мікрофонів, "
+"динаміків чи гнізд зарядки. Завдяки тому ми здатні розпочати блискавично "
+"швидко ремонт  Твого iPhone після отримання і віддати Тобі його в "
+"максимально короткому часі. У нашому сервісі ми дбаємо про постійну "
+"доступність найчастіше використовуючих компонентів при ремонті - батареї, "
+"дисплеїв, мікрофонів, динаміків чи гнізд зарядки. Завдяки тому ми здатні "
+"розпочати блискавично швидко ремонт  Твого iPhone після отримання і віддати "
+"Тобі його в максимально короткому часі. "
+
+#: main/templates/main/index.html:214
+msgid ""
+"Jeśli naprawa przeciągnie się nieco (np. jeden czy dwa dni) to zaoferujemy "
+"Ci telefon zastępczy – nie wyobrażamy sobie przecież codziennego "
+"funkcjonowania bez telefonu. Na koniec otrzymasz pisemną gwarancję, dzięki "
+"której możesz mieć pewność, że praca została wykonana poprawnie i zgodnie z "
+"wszelkimi normami."
+msgstr ""
+"Якщо на ремонт нам знадобиться трошки більше часу (напр. один чи два дні) - "
+"ми запропонуємо Тобі телефон на заміну  - ми не уявляємо собі повсякденного "
+"функціонування без телефону. На завершення ти отримаєш писемну гарантію, "
+"завдяки якій ти будеш впевнений, що робота була виконана правильно і згідно "
+"зі всілякими нормами."
+
+#: main/templates/main/index.html:241
+msgid "Naprawa iPhone Warszawa Śródmieście – jeśli zbił się wyświetlacz"
+msgstr "Ремонт iPhone Варшава Центр міста - якщо побився дисплей"
+
+#: main/templates/main/index.html:243
+msgid ""
+"Zdecydowanie najczęstszą awarią, jaka spotyka naszych klientów posiadających "
+"telefony z logo Apple, jest pęknięcie wyświetlacza. Niekiedy wydaje się ono "
+"niepozorne, ale bardzo często z czasem przestaje poprawnie działać warstwa "
+"dotykowa – co uniemożliwia dalsze użytkowanie telefonu. Innym razem rozbicie "
+"wyświetlacza jest tak duże, że natychmiast skłania właściciela do wymiany."
+msgstr ""
+"Найчастішою аварією, яка зустрічає наших клієнтів, що володіють телефонами з "
+"логотипом Apple, є тріщина дисплею. Інколи це здається не помітним, але з "
+"часом перестає правильно працювати сенсор - що унеможливлює подальше "
+"користування телефоном. В інших випадках коли екран дуже побитий це спонукає "
+"власника до негайної заміни."
+
+#: main/templates/main/index.html:244
+msgid ""
+"Niezależnie od powodu – nie warto się męczyć i skazywać na funkcjonowanie z "
+"niesprawnym telefonem. Pomimo popularnych opinii w sieci nie jest to takie "
+"proste, a próby samodzielnej wymiany mogą skończyć się uszkodzeniami płyty "
+"głównej, mikrofonu, obudowy czy nawet nowego ekranu. Twój iPhone to za "
+"drogie i za delikatne urządzenie, by poddawać go eksperymentom."
+msgstr ""
+"Не важливо якою була  причина - неварто мучитися несправним функціонування "
+"телефону. Крім популярних думок в мережі це не так легко ремонтувати "
+"смартфон, а спроби самостійної реабілітації можуть закінчитися пошкодженнями "
+"головної плити, мікрофону, корпусу чи навіть дисплею. Твій iPhone це за "
+"дорогий і за делікатний пристрій, щоб піддавати його експериментам. "
+
+#: main/templates/main/index.html:245
+msgid ""
+"Pozostaw go więc w naszych rękach i już po niedługim czasie przywróć swojego "
+"iPhone do pełnej sprawności – niezależnie, czy zdecydujesz się na "
+"oryginalny, czy zamienny wyświetlacz. Zazwyczaj taka wymiana zajmie nam nie "
+"więcej niż godzinę – szybko, sprawnie i bezpiecznie."
+msgstr ""
+"Залиш його в руках наших спеціалістів і вже за деякий час він буде "
+"повернений до повного робочого стану — не залежно, від того який ти вибрав "
+"дисплей - оригінальний чи копію. Зазвичай такий ремонт займає нам не більше "
+"ніж годину - швидко, ефективно і безпечно."
+
+#: main/templates/main/index.html:262
+msgid "Apple serwis Warszawa Śródmieście – jesteśmy po Twojej stronie"
+msgstr "Сервіс Apple Варшава - ми на вашому боці"
+
+#: main/templates/main/index.html:264
+msgid ""
+"Podejmując się naprawy urządzenia marki Apple, możesz zdecydować się na "
+"oddanie go do oficjalnego serwisu. Oczywiście będziesz mieć pewność, że "
+"zastosowane zostaną oryginalne elementy, a prace wykonane zostaną zgodnie z "
+"zaleceniami producenta. To również sposób na zachowanie gwarancji – i "
+"jednocześnie jedyna sytuacja, w której naprawdę warto się na taki krok "
+"zdecydować. Nie ukrywajmy – naprawy w autoryzowanym serwisie są koszmarnie "
+"drogie, a ich główną zaletą jest właśnie gwarancja."
+msgstr ""
+"Виконуючи ремонт пристрою марки Apple, Ви можете вибрати офіційне "
+"обслуговування. Звичайно, ви будете впевнені, що будуть використовуватися "
+"оригінальні елементи і робота буде виконана відповідно до рекомендацій "
+"виробника.  Це також спосіб зберегти гарантію  і водночас єдина ситуація, в "
+"якій дійсно варто зробити такий крок. Не приховуймо що ремонти в "
+"авторизованому сервісі – дуже дорогий, а їх головною перевагою є саме "
+"гарантія. "
+
+#: main/templates/main/index.html:265
+msgid ""
+"Jeśli jednak Twoje urządzenie nie posiada już gwarancji, nie ma ona dla "
+"Ciebie znaczenia albo usterka i tak powoduje utratę ochrony producenta (np. "
+"zalanie, albo głębokie uszkodzenie mechaniczne), to oddanie iPhone, iPada "
+"czy MacBooka do serwisu Apple nie ma większego sensu. My wykonamy dla Ciebie "
+"niezbędną naprawę szybciej – nawet w ciągu godziny, równie profesjonalnie – "
+"co potwierdzamy pisemną gwarancją serwisową i taniej – w czym zasługa "
+"wykorzystania wysokiej jakości zamienników."
+msgstr ""
+"Однак, якщо на  ваш пристрій більше немає гарантії, це для вас не має "
+"значення, тому що певний дефект спричиняє втрату гарантії від виробника "
+"(наприклад, залиття або механічні пошкодження), віддаючи iPhone, iPad чи "
+"MacBook до сервісу Apple не має сенсу. Ми виконаємо для вас необхідний "
+"ремонт швидше - навіть протягом години, однако професійно - що "
+"підтверджується письмовою гарантією на обслуговування та дешевше - завдяки "
+"використанню якісних замінників."
+
+#: main/templates/main/index.html:283
+msgid "Naprawa iPhone Warszawa – po zalaniu"
+msgstr "Ремонт iPhone Варшава – по залиттю "
+
+#: main/templates/main/index.html:285
+msgid ""
+"Zalanie telefonu wcale nie musi oznaczać jego ostatecznego uszkodzenia. "
+"Oczywiście urządzenia, do którego dostała się woda, nie należy dalej "
+"użytkować, ani liczyć na samoistne zniknięcie problemu. By możliwa była "
+"naprawa należy jak najwcześniej je wyłączyć i oddać do serwisu."
+msgstr ""
+"Затоплення телефону не обов'язково означає остаточну поломку. Звичайно, "
+"пристрій, у який потрапила вода, не слід використовувати далі і не "
+"сподіватися що проблема зникне сама по собі. Щоб ремонт був можливим, прилад "
+"слід якомога швидше вимкнути і віднести  до найближчого сервісу. "
+
+#: main/templates/main/index.html:286
+msgid ""
+"Tylko w ten sposób można zabezpieczyć iPhone przed destrukcyjnym działaniem "
+"wody. Dalsze wykorzystywanie urządzenia, w którym znajduje się ciecz, niemal "
+"na pewno doprowadzi do większych uszkodzeń – w najgorszym przypadku będzie "
+"to spalenie płyty głównej, ale prawdopodobne jest również spuchnięcie "
+"baterii, pojawienie się plam na wyświetlaczu czy uszkodzenie mikrofonu i "
+"głośnika. Jeśli jednak szybko oddasz Twój telefon do nas, to masz niemalże "
+"100%% pewności, że wróci sprawny i po zalaniu nie zostaną żadne ślady."
+msgstr ""
+"Це єдиний спосіб захистити свій iPhone від руйнівного впливу води. Подальше "
+"використання пристрою з рідиною в ньому може призвести до більшої шкоди - у "
+"гіршому випадку це спалить материнську плату, але також є ймовірність того, "
+"що акумулятор розбухне,  можуть появитися плями на дисплеї або пошкодження "
+"мікрофона та динаміка . Однак, якщо ви швидко віднесете нам свій телефон, ви "
+"можете бути майже на 100% впевнені, що він поверне свій робочий стан і по "
+"залиттю не залишиться жодного сліду."
+
+#: main/templates/main/index.html:303
+msgid "Naprawa Apple Warszawa – krok po kroku"
+msgstr "Ремонт Apple Варшава - крок за кроком"
+
+#: main/templates/main/index.html:305
+msgid ""
+"Każdy oddany w nasze ręce telefon zostaje podjęty gruntownej analizie. Zanim "
+"podejmiemy się jakichkolwiek działań, nawet zanim będziemy w stanie "
+"poinformować Cię o cenie podejmowanej przez nas naprawy, musimy mieć "
+"pewność, co dokładnie uległo uszkodzeniu. Bardzo cenimy sobie więc zatem "
+"wszystkie informacje, wskazujące na potencjalną przyczynę usterki oraz "
+"dokładny opis objawów, jakie w związku z nią wystąpiły."
+msgstr ""
+"Кожен переданий нам телефон ретельно проходить діагностику. Перш ніж вжити "
+"будь-яких заходів, ми будемо інформувати Тебе про ціну ремонту, який маємо "
+"виконати,  ми мусимо мати певність, що точно піддалося пошкодженню. Тому ми "
+"високо цінуємо всю інформацію, яка вказує на потенційну причину збою та "
+"детальний опис ознак, що виникли у зв’язку з цим. "
+
+#: main/templates/main/index.html:306
+msgid ""
+"Oczywiście nie zastępują one tego, co możemy zobaczyć, rozbierając "
+"urządzenie i samodzielnie oceniając każdy element w jego wnętrzu. Dlatego "
+"też nigdy się nie spieszymy, dokonując oceny stanu technicznego – mamy "
+"świadomość, że pospiesznie podjęte działania mogą przyczynić się do "
+"uszkodzenia nowej części, jak i pogorszenia sytuacji samego urządzenia."
+msgstr ""
+"Звичайно, вони не замінюють те, що можемо побачити ми коли ми розбираємо "
+"пристрій і самі оцінюємо кожен елемент всередині твого пристрою. Тому ми "
+"ніколи не поспішаємо оцінювати технічний стан - ми знаємо, що поспішні "
+"рішення можуть пошкодити нову деталь та погіршити стан самого пристрою. "
+
+#: main/templates/main/index.html:307
+msgid ""
+"Przy oględzinach urządzenia nie idziemy na skróty i nie zdajemy się na "
+"popularne schematy postępowania. W przypadku sprzętu za kilka, a niekiedy "
+"nawet kilkanaście tysięcy złotych uszkodzenia są ostatnią rzeczą, na którą "
+"możemy sobie pozwolić – mając to na uwadze, dokładamy starań, by nie pomylić "
+"się, poprawnie wykonać usługę i naszemu klientowi oddać w pełni sprawne "
+"urządzenie, co poświadczamy również naszą gwarancją."
+msgstr ""
+"В процесі діагностики пристроїв ми не шукаємо легких шляхів і не "
+"покладаємося на загальноприйняті схеми виявлення несправностей. Що "
+"стосується обладнання на кілька, а іноді навіть кілька тисяч злотих, "
+"пошкодження є останьоюю річчю на яку ми можемо собі дозволити  - маючи це на "
+"увазі, ми докладаємо всіх зусиль, щоб не помилитися, належним чином виконати "
+"ремонт та повернути клієнтові повністю функціональний пристрій, який ми "
+"засвідчуємо також своєю гарантією."
+
+#: main/templates/main/index.html:324
+msgid "Serwis baterii Apple Warszawa Śródmieście"
+msgstr "Сервіс акумуляторів Apple  Варшава  Центр міста"
+
+#: main/templates/main/index.html:326
+msgid ""
+"Wszystkie aktualnie produkowane urządzenia marki Apple mają wbudowane na "
+"stałe akumulatory. Jest to zarówno zaletą – sprzęt jest bardziej odporny na "
+"wstrząsy i solidniejszy, jak i wadą – w przypadku uszkodzenia czy zużycia "
+"baterii wiele osób godzi się na gorsze funkcjonowanie albo rozgląda się za "
+"nowym telefonem, tabletem, czy komputerem. Na szczęście to nie jedyne "
+"rozwiązanie – w naszym serwisie bezproblemowo wymienisz baterię swojego "
+"Appla na nową, dzięki czemu zaoszczędzisz setki, a nawet tysiące złotych, "
+"jest to również najlepsze rozwiązanie z powodów ekologicznych – zamiast co "
+"chwilę sięgać po nowe urządzenie znacznie mądrzej i lepiej dla planety "
+"będzie, jeśli zdecydujesz się na jego naprawę."
+msgstr ""
+"Всі пристрої марки Apple, що актуально виробляються, мають вбудовані "
+"акумулятори. Це одночасно і перевага - обладнання більш стійке до ударів і "
+"надійніше, а також недолік - у разі пошкодження або зносу акумулятора багато "
+"людей погоджуються на гірше функціонування або шукають новий телефон, "
+"планшет чи комп’ютер. На щастя то не єдине рішення - в нашому сервісі ти "
+"заміниш батарею свого Appla на нову, завдяки чому ти заощадиш сотні, а "
+"навіть тисячі злотих, це  також - найкраще рішення за екологічними "
+"обставинами - замість що хвилини сягати по новий пристрій значно мудрий тому "
+"набагато розумнішим та кращим для планети буде, якщо ви вирішите його "
+"відремонтувати."
+
+#: main/templates/main/index.html:327
+msgid ""
+"Sprawna i wymieniona bateria pozwala cieszyć się kolejnymi latami "
+"bezproblemowego użytkowania – szczególnie mając na uwadze, że urządzenia z "
+"logo nadgryzionego jabłka starzeją się wyraźnie wolniej od konkurencji, "
+"dłużej otrzymują aktualizacje i wykonane są z wyższej jakości materiałów, "
+"które lepiej znoszą próbę czasu. Dlatego wymiana baterii na zamiennik "
+"wysokiej jakości albo oryginał ma jak najbardziej sens."
+msgstr ""
+"Ефективний та замінений акумулятор дозволяє насолоджуватися наступними "
+"роками безпроблемного використання - особливо маючи на увазі, що пристрої з "
+"логотипом вкушеного яблука старіють значно повільніше, ніж конкуренти, тому "
+"що отримують більш довгу підтримку в актуалізації та виготовляються з більш "
+"якісних матеріалів, які краще витримують випробування часом . Тому заміна "
+"акумулятора на якісну підробку або оригінал має цілковитий сенс."
+
+#: main/templates/main/index.html:344
+msgid "Apple serwis Warszawa Śródmieście – postaw na specjalistów"
+msgstr "Apple сервіс Варшава Центр міста - зробіть ставку на фахівців"
+
+#: main/templates/main/index.html:346
+msgid ""
+"Twój sprzęt to kawał porządnie, solidnie opracowanej i wykonanej "
+"elektroniki. Urządzenia marki Apple są tak stworzone, by ich obsługa "
+"sprawiała jak najwięcej radości i by stanowiły doskonałe narzędzie w pracy – "
+"niezależnie czym się zajmujesz."
+msgstr ""
+"Ваше обладнання - це справна і надійно розроблена електроніка. Пристрої "
+"марки Apple створені так, щоб їх обслуговування спричиняло як найбільше "
+"радощів і щоб вони були чудовим інструментом в роботі - незалежно від того, "
+"в якій сфері ви працюєте. "
+
+#: main/templates/main/index.html:347
+msgid ""
+"Kiedy ulegnie uszkodzeniu, warto więc oddać je w sprawdzone ręce, by znów "
+"działało jak dawniej, zapewniając Ci podobną przyjemność i wygodę "
+"użytkowania jak wtedy, gdy wyciągałeś go z po raz pierwszy z pudełka. "
+"Dokładamy starań, byś to właśnie u nas znalazł najlepszy serwis iPhone w "
+"Warszawa Śródmieście – niezależnie od skali problemu i tego, jak trudny by "
+"się wydawał, to właśnie u nas znajdziesz jego rozwiązanie."
+msgstr ""
+"Коли смартфон пошкоджений, варто віддати його перевіреним рукам "
+"спеціалістів, щоб він працював, як і раніше, забезпечуючи вам таке саме "
+"задоволення та зручність в використанні, як коли ви виймали його з коробки "
+"вперше. Ми докладаємо всіх зусиль для того, щоб ви знайшли найкращий сервіс "
+"iPhone у Варшаві в центрі міста - незалежно від масштабу проблеми та того, "
+"наскільки складною вона може здатися, тщ саме в нас ти знайдеш рішення "
+"проблемі"
+
+#: main/templates/main/learning.html:11
+msgid "Dobry Majster Serwis - Szkolenia"
+msgstr "Dobry Majster Сервіс - Курси"
+
+#: main/templates/main/learning.html:17 main/templates/main/learning.html:43
+msgid "Szkolenia"
+msgstr "Курси"
+
+#: main/templates/main/learning.html:55
+msgid "Na razie nie prowadzimy szkolenia :("
+msgstr "Поки що ми не маємо курсів"
+
+#: main/templates/main/privacy_policy.html:8
+msgid "Dobry Majster Serwis - Polityka prywatnośći"
+msgstr "Dobry Majster Сервіс - Політика конфіденційності"
+
+#: main/templates/main/privacy_policy.html:12
+msgid ""
+"Polityka prywatności opisuje zasady przetwarzania przez nas informacji na "
+"Twój temat, w tym danych osobowych oraz ciasteczek, czyli tzw. cookies."
+msgstr ""
+"Політика конфіденційності описує правила обробки інформації про вас, "
+"включаючи особисті дані і файли cookies."
+
+#: main/templates/main/privacy_policy.html:15
+msgid "1. Informacje ogólne"
+msgstr "1. Загальна інформація"
+
+#: main/templates/main/privacy_policy.html:17
+msgid "Niniejsza polityka dotyczy Serwisu www, funkcjonującego pod adresem"
+msgstr "Ця політика застосовується до веб-сайту, яка працює за адресою: "
+
+#: main/templates/main/privacy_policy.html:18
+msgid ""
+"Operatorem serwisu oraz Administratorem danych osobowych jest: Dobry Majster "
+"sp. z o.o. Warszawie, al. Jana Pawła II 41a, 01-008"
+msgstr ""
+"Оператором веб-сайту і адміністратором персональних даних є: Dobry Majster "
+"sp. z o.o. Warszawie, al. Jana Pawła II 41a, 01-008"
+
+#: main/templates/main/privacy_policy.html:19
+msgid "Adres kontaktowy poczty elektronicznej operatora: dmajster.pl@gmail.com"
+msgstr "Контактна адреса електронної пошти оператора: dmajster.pl@gmail.com"
+
+#: main/templates/main/privacy_policy.html:20
+msgid ""
+"Operator jest Administratorem Twoich danych osobowych w odniesieniu do "
+"danych podanych dobrowolnie w Serwisie."
+msgstr ""
+"Оператор є адміністратором ваших особистих даних щодо даних, які ви "
+"добровільно надали в сервісному центрі."
+
+#: main/templates/main/privacy_policy.html:21
+msgid "Serwis wykorzystuje dane osobowe w następujących celach:"
+msgstr "Сервіс використовує особисті дані в наступних цілях:"
+
+#: main/templates/main/privacy_policy.html:23
+msgid "Obsługa zapytań przez formularz"
+msgstr "Процедура розгляду заявки через заповнену анкету"
+
+#: main/templates/main/privacy_policy.html:26
+msgid ""
+"Serwis realizuje funkcje pozyskiwania informacji o użytkownikach i ich "
+"zachowaniu w następujący sposób:"
+msgstr ""
+"Сервісний центр отримує інформацію про користувачів і їх поведінку наступним "
+"чином:"
+
+#: main/templates/main/privacy_policy.html:28
+msgid ""
+"Poprzez dobrowolnie wprowadzone w formularzach dane, które zostają "
+"wprowadzone do systemów Operatora."
+msgstr ""
+"Через дані, які добровільно введені в форми, які вводяться в систему "
+"Оператора."
+
+#: main/templates/main/privacy_policy.html:29
+msgid ""
+"Poprzez zapisywanie w urządzeniach końcowych plików cookie (tzw. "
+"„ciasteczka”)."
+msgstr ""
+"Зберігаючи файли cookies на останніх пристроях (так звані «файли cookies»)."
+
+#: main/templates/main/privacy_policy.html:36
+msgid "2.  Wybrane metody ochrony danych stosowane przez Operatora"
+msgstr "2. Вибрані методи захисту даних, що використовуються Оператором."
+
+#: main/templates/main/privacy_policy.html:38
+msgid ""
+"Miejsca logowania i wprowadzania danych osobowych są chronione w warstwie "
+"transmisji (certyfikat SSL). Dzięki temu dane osobowe i dane logowania, "
+"wprowadzone na stronie, zostają zaszyfrowane w komputerze użytkownika i mogą "
+"być odczytane jedynie na docelowym serwerze."
+msgstr ""
+"Місця входу в систему і введення особистих даних захищені на рівні передачі "
+"(SSL-сертифікат). В результаті особисті дані і дані для входу, введені на "
+"веб-сайті, зашифровуються на комп'ютері користувача і можуть бути прочитані "
+"тільки на цільовому сервері."
+
+#: main/templates/main/privacy_policy.html:39
+msgid ""
+"Dane osobowe przechowywane w bazie danych są zaszyfrowane w taki sposób, że "
+"jedynie posiadający Operator klucz może je odczytać. Dzięki temu dane są "
+"chronione na wypadek wykradzenia bazy danych z serwera."
+msgstr ""
+"Персональні дані, що зберігаються в базі даних, зашифровані таким чином, що "
+"їх може прочитати тільки Оператор, який володіє ключем. Завдяки цьому дані "
+"захищені в разі крадіжки бази даних з сервера."
+
+#: main/templates/main/privacy_policy.html:40
+msgid ""
+"Hasła użytkowników są przechowywane w postaci hashowanej. Funkcja hashująca "
+"działa jednokierunkowo – nie jest możliwe odwrócenie jej działania, co "
+"stanowi obecnie współczesny standard w zakresie przechowywania haseł "
+"użytkowników."
+msgstr ""
+"Паролі користувачів зберігаються в хешированій формі. Хеш-функція працює в "
+"одному напрямку - скасувати її роботу неможливо, що зараз є сучасним "
+"стандартом в області зберігання паролів користувачів."
+
+#: main/templates/main/privacy_policy.html:41
+msgid "Operator okresowo zmienia swoje hasła administracyjne."
+msgstr "Оператор періодично змінює свої адміністративні паролі."
+
+#: main/templates/main/privacy_policy.html:42
+msgid ""
+"W celu ochrony danych Operator regularnie wykonuje kopie bezpieczeństwa."
+msgstr "З метою захисту даних Оператор регулярно робить резервні копії."
+
+#: main/templates/main/privacy_policy.html:43
+msgid ""
+"Istotnym elementem ochrony danych jest regularna aktualizacja wszelkiego "
+"oprogramowania, wykorzystywanego przez Operatora do przetwarzania danych "
+"osobowych, co w szczególności oznacza regularne aktualizacje komponentów "
+"programistycznych."
+msgstr ""
+"Важливим елементом захисту даних є регулярне оновлення всього програмного "
+"забезпечення, використовуваного Оператором для обробки персональних даних, "
+"що, зокрема, означає регулярне оновлення програмних компонентів."
+
+#: main/templates/main/privacy_policy.html:48
+msgid "3. Hosting"
+msgstr "3. Хостинг"
+
+#: main/templates/main/privacy_policy.html:50
+msgid ""
+"Serwis jest hostowany (technicznie utrzymywany) na serwera operatora: inna "
+"firma"
+msgstr ""
+"Сервіс розміщений (технічно підтримується) на сервері оператора: інша "
+"компанія"
+
+#: main/templates/main/privacy_policy.html:55
+msgid "4. Twoje prawa i dodatkowe informacje o sposobie wykorzystania danych"
+msgstr ""
+"4. Ваші права і додаткова інформація про те, як використовуються ваші дані."
+
+#: main/templates/main/privacy_policy.html:57
+msgid ""
+"W niektórych sytuacjach Administrator ma prawo przekazywać Twoje dane "
+"osobowe innym odbiorcom, jeśli będzie to niezbędne do wykonania zawartej z "
+"Tobą umowy lub do zrealizowania obowiązków ciążących na Administratorze. "
+"Dotyczy to takich grup odbiorców:"
+msgstr ""
+"У деяких ситуаціях Адміністратор має право передати ваші особисті дані іншим "
+"одержувачам, якщо це необхідно для виконання підписаного з вами договору або "
+"виконання зобов'язань, покладених на Адміністратора. Це стосується таких "
+"груп одержувачів:"
+
+#: main/templates/main/privacy_policy.html:59
+msgid ""
+"osoby upoważnione przez nas, pracownicy i współpracownicy, którzy muszą mieć "
+"dostęp do danych osobowych w celu wykonywania swoich obowiązków,"
+msgstr ""
+"уповноважені нами особи, співробітники і партнери, які повинні мати доступ "
+"до особистих даних для виконання своїх обов'язків,"
+
+#: main/templates/main/privacy_policy.html:60
+msgid "firma hostingowa,"
+msgstr "хостінг компанії,"
+
+#: main/templates/main/privacy_policy.html:61
+msgid "firmy obsługująca mailingi,"
+msgstr "поштові компанії,"
+
+#: main/templates/main/privacy_policy.html:62
+msgid "firmy obsługująca komunikaty SMS,"
+msgstr "компанії, що працюють з SMS-повідомленнями,"
+
+#: main/templates/main/privacy_policy.html:63
+msgid ""
+"firmy, z którymi Administrator współpracuje w zakresie marketingu własnego,"
+msgstr ""
+"компанії, з якими Адміністратор співпрацює в області власного маркетингу,"
+
+#: main/templates/main/privacy_policy.html:64
+msgid "kurierzy,"
+msgstr "кур'єри,"
+
+#: main/templates/main/privacy_policy.html:65
+msgid "ubezpieczyciele,"
+msgstr "страховики,"
+
+#: main/templates/main/privacy_policy.html:66
+msgid "kancelarie prawne i windykatorzy,"
+msgstr "юридичні фірми та збирачі боргів,"
+
+#: main/templates/main/privacy_policy.html:67
+msgid "banki,"
+msgstr "банки,"
+
+#: main/templates/main/privacy_policy.html:68
+msgid "operatorzy płatności,"
+msgstr "платіжні оператори,"
+
+#: main/templates/main/privacy_policy.html:69
+msgid "organy publiczne."
+msgstr "органи державної влади."
+
+#: main/templates/main/privacy_policy.html:72
+msgid ""
+"Twoje dane osobowe przetwarzane przez Administratora nie dłużej, niż jest to "
+"konieczne do wykonania związanych z nimi czynności określonych osobnymi "
+"przepisami (np. o prowadzeniu rachunkowości). W odniesieniu do danych "
+"marketingowych dane nie będą przetwarzane dłużej niż przez 3 lata."
+msgstr ""
+"Ваші особисті дані обробляються Адміністратором не довше ніж це необхідно "
+"для виконання відповідних дій, зазначених в окремих нормативно-правових "
+"актах (наприклад, з бухгалтерського обліку). Що стосується маркетингових "
+"даних, то дані будуть оброблятися не більше 3 років."
+
+#: main/templates/main/privacy_policy.html:73
+msgid "Przysługuje Ci prawo żądania od Administratora:"
+msgstr "Ви маєте право запросити у Адміністратора:"
+
+#: main/templates/main/privacy_policy.html:75
+msgid "dostępu do danych osobowych Ciebie dotyczących,"
+msgstr "доступ до ваших особистих даних,"
+
+#: main/templates/main/privacy_policy.html:76
+msgid "ich sprostowania,"
+msgstr "про їх виправлення,"
+
+#: main/templates/main/privacy_policy.html:77
+msgid "usunięcia,"
+msgstr "видалення,"
+
+#: main/templates/main/privacy_policy.html:78
+msgid "ograniczenia przetwarzania,"
+msgstr "обмеження обробки,"
+
+#: main/templates/main/privacy_policy.html:79
+msgid "oraz przenoszenia danych."
+msgstr "і про переносимість даних."
+
+#: main/templates/main/privacy_policy.html:82
+msgid ""
+"Przysługuje Ci prawo do złożenia sprzeciwu w zakresie przetwarzania "
+"wskazanego w pkt 3.3 c) wobec przetwarzania danych osobowych w celu "
+"wykonania prawnie uzasadnionych interesów realizowanych przez "
+"Administratora, w tym profilowania, przy czym prawo sprzeciwu nie będzie "
+"mogło być wykonane w przypadku istnienia ważnych prawnie uzasadnionych "
+"podstaw do przetwarzania, nadrzędnych wobec Ciebie interesów, praw i "
+"wolności, w szczególności ustalenia, dochodzenia lub obrony roszczeń."
+msgstr ""
+"Ви маєте право заперечувати проти обробки, (зазначеної в пункті 3.3 c), "
+"проти обробки персональних даних для виконання законних інтересів, "
+"реальзованих Адміністратором, включаючи профілювання, в той час як право на "
+"заперечення не може бути реалізовано, якщо є справжні юридично обґрунтовані "
+"підстави для розгляду ваших інтересів, прав і свобод, зокрема для "
+"пред'явлення, затвердження або захисту вимог."
+
+#: main/templates/main/privacy_policy.html:83
+msgid ""
+"Na działania Administratora przysługuje skarga do Prezesa Urzędu Ochrony "
+"Danych Osobowych, ul. Stawki 2, 00-193 Warszawa."
+msgstr ""
+"Дії Адміністратора можуть бути оскаржені начальнику Управління захисту "
+"персональних даних, вул. Ставки 2, 00-193 Варшава."
+
+#: main/templates/main/privacy_policy.html:84
+msgid ""
+"Podanie danych osobowych jest dobrowolne, lecz niezbędne do obsługi Serwisu."
+msgstr ""
+"Надання особистих даних є добровільним, але необхідно для роботи сервісного "
+"центру."
+
+#: main/templates/main/privacy_policy.html:85
+msgid ""
+"W stosunku do Ciebie mogą być podejmowane czynności polegające na "
+"zautomatyzowanym podejmowaniu decyzji, w tym profilowaniu w celu świadczenia "
+"usług w ramach zawartej umowy oraz w celu prowadzenia przez Administratora "
+"marketingu bezpośredniego."
+msgstr ""
+"Відносно вас можуть бути зроблені дії, які полягають в автоматизованому "
+"прийнятті рішень, включаючи профілювання, з метою надання послуг відповідно "
+"до укладеного контракту та з метою проведення прямого маркетингу "
+"Адміністратором."
+
+#: main/templates/main/privacy_policy.html:86
+msgid ""
+"Dane osobowe nie są przekazywane od krajów trzecich w rozumieniu przepisów o "
+"ochronie danych osobowych. Oznacza to, że nie przesyłamy ich poza teren Unii "
+"Europejskiej."
+msgstr ""
+"Персональні дані не передаються до третіх країн в розумінні про захист "
+"персональних даних. Це означає, що ми не відправляємо їх за межі "
+"Європейського Союзу."
+
+#: main/templates/main/privacy_policy.html:91
+msgid "5. Informacje w formularzach"
+msgstr "5. Інформація про анкети"
+
+#: main/templates/main/privacy_policy.html:93
+msgid ""
+"Serwis zbiera informacje podane dobrowolnie przez użytkownika, w tym dane "
+"osobowe, o ile zostaną one podane."
+msgstr ""
+"Сервісний центр збирає інформацію, добровільно надану користувачем, "
+"включаючи особисті дані, якщо такі були надані."
+
+#: main/templates/main/privacy_policy.html:94
+msgid ""
+"Serwis może zapisać informacje o parametrach połączenia (oznaczenie czasu, "
+"adres IP)."
+msgstr ""
+"У сервісному центрі можна зберігати інформацію про параметри підключення "
+"(відмітка часу, IP-адреса)."
+
+#: main/templates/main/privacy_policy.html:95
+msgid ""
+"Serwis, w niektórych wypadkach, może zapisać informację ułatwiającą "
+"powiązanie danych w formularzu z adresem e-mail użytkownika wypełniającego "
+"formularz. W takim wypadku adres e-mail użytkownika pojawia się wewnątrz "
+"adresu url strony zawierającej formularz."
+msgstr ""
+"Сервісний центр, в деяких випадках, може зберігати інформацію, полегшуючи "
+"зв'язування даних в формі з адресою електронної пошти користувача, що "
+"заповнює форму. У цьому випадку адреса електронної пошти користувача "
+"з'являється всередині URL-адреси сторінки, що містить форму."
+
+#: main/templates/main/privacy_policy.html:96
+msgid ""
+"Dane podane w formularzu są przetwarzane w celu wynikającym z funkcji "
+"konkretnego formularza, np. w celu dokonania procesu obsługi zgłoszenia "
+"serwisowego lub kontaktu handlowego, rejestracji usług itp. Każdorazowo "
+"kontekst i opis formularza w czytelny sposób informuje, do czego on służy."
+msgstr ""
+"Дані, представлені в анкеті, обробляються для цілей, що випливають з функції "
+"конкретної анкети, наприклад, для обробки запиту на обслуговування або "
+"комерційного контакту, реєстрації послуги і тд. Контекст і опис анкети кожен "
+"раз ясно повідомляє, для чого це використовується."
+
+#: main/templates/main/privacy_policy.html:101
+msgid "6. Logi Administratora"
+msgstr "6. Журнали адміністратора."
+
+#: main/templates/main/privacy_policy.html:103
+msgid ""
+"Informacje zachowaniu użytkowników w serwisie mogą podlegać logowaniu. Dane "
+"te są wykorzystywane w celu administrowania serwisem."
+msgstr ""
+"Інформація про поведінку користувачів в сервісному центрі може "
+"реєструватися. Ці дані використовуються для адміністрування сервісу."
+
+#: main/templates/main/privacy_policy.html:108
+msgid "7. Istotne techniki marketingowe"
+msgstr "7. Відповідні методи маркетингу"
+
+#: main/templates/main/privacy_policy.html:110
+msgid ""
+"Operator stosuje analizę statystyczną ruchu na stronie, poprzez Google "
+"Analytics (Google Inc. z siedzibą w USA). Operator nie przekazuje do "
+"operatora tej usługi danych osobowych, a jedynie zanonimizowane informacje. "
+"Usługa bazuje na wykorzystaniu ciasteczek w urządzeniu końcowym użytkownika. "
+"W zakresie informacji o preferencjach użytkownika gromadzonych przez sieć "
+"reklamową Google użytkownik może przeglądać i edytować informacje wynikające "
+"z plików cookies przy pomocy narzędzia: https://www.google.com/ads/"
+"preferences/"
+msgstr ""
+"Оператор використовує статистичний аналіз відвідуваності веб-сайтів за "
+"допомогою Google Analytics (Google Inc., що базується в США). Оператор не "
+"надає особисті дані, а тільки анонімну інформацію. Послуга заснована на "
+"використанні файлів cookie на останньому пристрої користувача. Що стосується "
+"інформації про користувача перевагах, зібраної реклами мережею Google, "
+"користувач може переглядати і редагувати інформацію, отриману з файлів "
+"cookie, за допомогою сторінки: https://www.google.com/ads/preferences/"
+
+#: main/templates/main/privacy_policy.html:111
+msgid ""
+"Operator stosuje techniki remarketingowe, pozwalające na dopasowanie "
+"przekazów reklamowych do zachowania użytkownika na stronie, co może dawać "
+"złudzenie, że dane osobowe użytkownika są wykorzystywane do jego śledzenia, "
+"jednak w praktyce nie dochodzi do przekazania żadnych danych osobowych od "
+"Operatora do operatorom reklam. Technologicznym warunkiem takich działań "
+"jest włączona obsługa plików cookie."
+msgstr ""
+"Оператор використовує методи ремаркетингу, які дозволяють зіставити рекламні "
+"повідомлення з поведінкою користувача на веб-сайті, що може створити ілюзію, "
+"що особисті дані користувача використовуються для його відстеження, але на "
+"практиці ніякі особисті дані не передаються від Оператора рекламним "
+"операторам. . Технологічною мовою для такої діяльності є включення файлів "
+"cookie."
+
+#: main/templates/main/privacy_policy.html:112
+msgid ""
+"Operator stosuje korzysta z piksela Facebooka. Ta technologia powoduje, że "
+"serwis Facebook (Facebook Inc. z siedzibą w USA) wie, że dana osoba w nim "
+"zarejestrowana korzysta z Serwisu. Bazuje w tym wypadku na danych, wobec "
+"których sam jest administratorem, Operator nie przekazuje od siebie żadnych "
+"dodatkowych danych osobowych serwisowi Facebook. Usługa bazuje na "
+"wykorzystaniu ciasteczek w urządzeniu końcowym użytkownika."
+msgstr ""
+"Оператор використовує піксель Facebook. Ця технологія означає, що Facebook "
+"(Facebook Inc., що базується в США) знає, що зареєстрована певна особа "
+"використовує послуги сервісного центру. У цьому випадку він заснований на "
+"даних, для яких він є самим адміністратором, Оператор не надає ніяких "
+"додаткових особистих даних для Facebook. Послуга заснована на використанні "
+"файлів cookie на останньому пристрої користувача."
+
+#: main/templates/main/privacy_policy.html:113
+msgid ""
+"Operator stosuje rozwiązanie badające zachowanie użytkowników poprzez "
+"tworzenie map ciepła oraz nagrywanie zachowania na stronie. Te informacje są "
+"anonimizowane zanim zostaną przesłane do operatora usługi tak, że nie wie on "
+"jakiej osoby fizycznej one dotyczą. W szczególności nagrywaniu nie podlegają "
+"wpisywane hasła oraz inne dane osobowe."
+msgstr ""
+"Оператор використовує рішення, яке досліджує поведінку користувача, "
+"створюючи карти і записуючи поведінку на веб-сайті. Ця інформація "
+"анонімізується перед відправкою оператору служби, тому він не знає, до якій "
+"фізичній особі вона належить. Зокрема, паролі та інші особисті дані не "
+"записуються."
+
+#: main/templates/main/privacy_policy.html:118
+msgid "8. Informacja o plikach cookies"
+msgstr "8. Інформація про файли cookies"
+
+#: main/templates/main/privacy_policy.html:120
+msgid "Serwis korzysta z plików cookies."
+msgstr "Сервіс використовує файли cookies."
+
+#: main/templates/main/privacy_policy.html:121
+msgid ""
+"Pliki cookies (tzw. „ciasteczka”) stanowią dane informatyczne, w "
+"szczególności pliki tekstowe, które przechowywane są w urządzeniu końcowym "
+"Użytkownika Serwisu i przeznaczone są do korzystania ze stron internetowych "
+"Serwisu. Cookies zazwyczaj zawierają nazwę strony internetowej, z której "
+"pochodzą, czas przechowywania ich na urządzeniu końcowym oraz unikalny numer."
+msgstr ""
+"Файли cookies - це дані ІТ, зокрема текстові файли, які зберігаються на "
+"останньому пристрої користувача сервісу і призначені для використання "
+"сторінок веб-сайту. Файли cookies зазвичай містять назву веб-сайту, з якого "
+"вони отримані, час зберігання на останньому пристрої і унікальний номер."
+
+#: main/templates/main/privacy_policy.html:122
+msgid ""
+"Podmiotem zamieszczającym na urządzeniu końcowym Użytkownika Serwisu pliki "
+"cookies oraz uzyskującym do nich dostęp jest operator Serwisu."
+msgstr ""
+"Суб'єкт, який розміщує файли cookies на останньому пристрої користувача веб-"
+"сайту і отримує до них доступ, є оператором сервісу."
+
+#: main/templates/main/privacy_policy.html:123
+msgid "Pliki cookies wykorzystywane są w następujących celach:"
+msgstr "Файли cookie використовуються для наступних цілей:"
+
+#: main/templates/main/privacy_policy.html:125
+msgid ""
+"utrzymanie sesji użytkownika Serwisu (po zalogowaniu), dzięki której "
+"użytkownik nie musi na każdej podstronie Serwisu ponownie wpisywać loginu i "
+"hasła;"
+msgstr ""
+"підтримку сеансу користувача сервісу (після входу в систему), завдяки якому "
+"користувачеві не потрібно повторно вводити логін і пароль на кожній сторінці "
+"Веб-сайту;"
+
+#: main/templates/main/privacy_policy.html:126
+msgid ""
+"realizacji celów określonych powyżej w części “Istotne techniki "
+"marketingowe”;"
+msgstr ""
+"досягнення цілей, викладених вище в розділі «Важливі маркетингові прийоми»;"
+
+#: main/templates/main/privacy_policy.html:129
+msgid ""
+"W ramach Serwisu stosowane są dwa zasadnicze rodzaje plików cookies: "
+"„sesyjne” (session cookies) oraz „stałe” (persistent cookies). Cookies "
+"„sesyjne” są plikami tymczasowymi, które przechowywane są w urządzeniu "
+"końcowym Użytkownika do czasu wylogowania, opuszczenia strony internetowej "
+"lub wyłączenia oprogramowania (przeglądarki internetowej). „Stałe” pliki "
+"cookies przechowywane są w urządzeniu końcowym Użytkownika przez czas "
+"określony w parametrach plików cookies lub do czasu ich usunięcia przez "
+"Użytkownika."
+msgstr ""
+"Веб-сайт використовує два основних типи файлів cookies: файли сеансові "
+"(session cookies) і постійні файли (persistent cookies). Сеансові файли "
+"cookies - це тимчасові файли, які зберігаються на кінцевому пристрої "
+"користувача до виходу з системи, виходу з веб-сайту або виключення "
+"програмного забезпечення (веб-браузера). Постійні файли cookies зберігаються "
+"на кінцевому пристрої користувача протягом деякого часу, зазначеного в "
+"параметрах файлу cookies, або до тих пір, поки вони не будуть видалені "
+"користувачем."
+
+#: main/templates/main/privacy_policy.html:130
+msgid ""
+"Oprogramowanie do przeglądania stron internetowych (przeglądarka "
+"internetowa) zazwyczaj domyślnie dopuszcza przechowywanie plików cookies w "
+"urządzeniu końcowym Użytkownika. Użytkownicy Serwisu mogą dokonać zmiany "
+"ustawień w tym zakresie. Przeglądarka internetowa umożliwia usunięcie plików "
+"cookies. Możliwe jest także automatyczne blokowanie plików cookies "
+"Szczegółowe informacje na ten temat zawiera pomoc lub dokumentacja "
+"przeglądarki internetowej."
+msgstr ""
+"Програмне забезпечення для перегляду веб-сторінок (веб-браузер) зазвичай за "
+"умовчанням дозволяє зберігати файли cookies на пристрої користувача. "
+"Користувачі веб-сайту можуть змінити налаштування. Веб-браузер дозволяє "
+"видаляти файли cookies. Також можна автоматично блокувати файли cookies. "
+"Детальну інформацію з цього приводу можна знайти в довідці або документації "
+"веб-браузера."
+
+#: main/templates/main/privacy_policy.html:131
+msgid ""
+"Ograniczenia stosowania plików cookies mogą wpłynąć na niektóre "
+"funkcjonalności dostępne na stronach internetowych Serwisu."
+msgstr ""
+"Обмеження на використання файлів cookies можуть вплинути на деякі функції, "
+"доступні на сторінках веб-сайту."
+
+#: main/templates/main/privacy_policy.html:132
+msgid ""
+"Pliki cookies zamieszczane w urządzeniu końcowym Użytkownika Serwisu "
+"wykorzystywane mogą być również przez współpracujące z operatorem Serwisu "
+"podmioty, w szczególności dotyczy to firm: Google (Google Inc. z siedzibą w "
+"USA), Facebook (Facebook Inc. z siedzibą w USA), Twitter (Twitter Inc. z "
+"siedzibą w USA)."
+msgstr ""
+"Файли cookies, розміщені на пристрої користувача веб-сайту, також можуть "
+"використовуватися організаціями, які співпрацюють з оператором веб-сайту, "
+"зокрема такими компаніями: Google (Google Inc. базується в США), Facebook "
+"(Facebook Inc. базується в США), Twitter (Twitter Inc., що базується в США)."
+
+#: main/templates/main/privacy_policy.html:137
+msgid "9. Zarządzanie plikami cookies – jak w praktyce wyrażać i cofać zgodę?"
+msgstr ""
+"9. Управління файлами cookies - як на практиці використовувати і анулювати "
+"згоду?"
+
+#: main/templates/main/privacy_policy.html:139
+msgid ""
+"Jeśli użytkownik nie chce otrzymywać plików cookies, może zmienić ustawienia "
+"przeglądarki. Zastrzegamy, że wyłączenie obsługi plików cookies niezbędnych "
+"dla procesów uwierzytelniania, bezpieczeństwa, utrzymania preferencji "
+"użytkownika może utrudnić, a w skrajnych przypadkach może uniemożliwić "
+"korzystanie ze stron www"
+msgstr ""
+"Якщо користувач не бажає отримувати файли cookies, він може змінити "
+"настройки браузера. Ми залишаємо за собою право на те, що відключення файлів "
+"cookies, необхідних для процесів аутентифікації, безпеки і збереження "
+"налаштувань, може утруднити, а в крайніх випадках може перешкодити "
+"використанню веб-сайтів."
+
+#: main/templates/main/privacy_policy.html:140
+msgid ""
+"W celu zarządzania ustawienia cookies wybierz z listy poniżej przeglądarkę "
+"internetową, której używasz i postępuj zgodnie z instrukcjami:"
+msgstr ""
+"Для управління настройками файлів cookies виберіть використовуваний вами веб-"
+"браузер зі списку нижче і дотримуйтесь інструкцій:"
+
+#: main/templates/main/privacy_policy.html:149
+msgid "Urządzenia mobilne:"
+msgstr "Мобільні пристрої:"
+
+#: main/templates/main/privacy_policy.html:159
+msgid ""
+"Niniejszy wzór polityki został wygenerowany bezpłatnie, w celach "
+"informacyjnych, w oparciu o naszą wiedzę, branżowe praktyki i przepisy prawa "
+"obowiązujące na dzień 2018-08-14. Zalecamy sprawdzenie wzoru polityki przed "
+"użyciem jej na stronie. Wzór opiera się na najczęściej występujących na "
+"stronach internetowych sytuacjach, ale może nie odzwierciedlać pełnej i "
+"dokładnej specyfiki Twojej strony www. Przeczytaj uważnie wygenerowany "
+"dokument i w razie potrzeb dostosuj go do Twojej sytuacji lub zasięgnij "
+"porady prawnej. Nie bierzemy odpowiedzialności za skutki posługiwania się "
+"tym dokumentem, ponieważ tylko Ty masz wpływ na to, czy wszystkie informacje "
+"w nim zawarte są zgodne z prawdą. Zwróć także uwagę, że Polityka "
+"Prywatności, nawet najlepsza, jest tylko jednym z elementów Twojej troski o "
+"dane osobowe i prywatność użytkownika na stronie www."
+msgstr ""
+"Цей шаблон політики був створений безкоштовно в інформаційних цілях на "
+"основі наших знань, галузевої практики і правових положень, що діють на 14 "
+"серпня 2018 року. Ми рекомендуємо вам перевірити шаблон політики, перш ніж "
+"використовувати його на веб-сайті. Форма заснована на найбільш поширених "
+"ситуаціях на веб-сайтах, але може не відображати повну і точну специфіку "
+"вашого веб-сайту. Уважно прочитайте створений документ і при необхідності "
+"адаптуйте його до вашої ситуації або зверніться за юридичною консультацією. "
+"Ми не несемо відповідальності за наслідки використання цього документа, тому "
+"що тільки ви можете вплинути на достовірність всієї інформації, що міститься "
+"в ньому. Також зверніть увагу, що Політика конфіденційності, навіть "
+"найкраща, є лише одним з елементів вашої безпеки про особисті дані і "
+"конфіденційності користувачів на веб-сайті."
+
+#: main/templates/main/review.html:11
+msgid "Dobry Majster Serwis - Opinie"
+msgstr "Dobry Majster Сервіс - Відгуки"
+
+#: main/templates/main/review.html:17
+msgid "Opinie o nas"
+msgstr "Відгуки про нас"
+
+#: main/templates/main/shipping.html:10
+msgid "Dobry Majster Serwis - Dostawa"
+msgstr "Dobry Majster Сервіс - Доставка"
+
+#: main/templates/main/sukces.html:16
+msgid "Dziękujemy za zgłoszenie!"
+msgstr "Дякуємо за контакт з нами!"
+
+#: main/templates/main/sukces.html:17
+msgid "Wkrótce się skontaktujemy z tobą"
+msgstr "Ми зв'яжемось з Вами як найшвидше"
+
+#: main/templates/main/sukces.html:20
+msgid "Strona Główna"
+msgstr "Головна"
+
+#: main/templates/main/team.html:11
+msgid "Dobry Majster Serwis - Zespół"
+msgstr "Dobry Majster Сервіс - Команда"
+
+#: main/templates/main/team.html:19
+msgid "Nasz zespół"
+msgstr "Наша команда"
+
+#: main/templates/main/team.html:21
+msgid "Nasi pracownicy"
+msgstr "Наші працівники"
+
+#: main/templates/main/work.html:11
+msgid "Dobry Majster Serwis - Praca"
+msgstr "Dobry Majster Сервіс - Праця"
+
+#: main/templates/main/work.html:18
+msgid "Nazse oferty pracy"
+msgstr "Наша пропозиція вакансії майстра"
+
+#: main/templates/main/work.html:42
+msgid "Na razie nie prowadzimy rekrutacji"
+msgstr "Поки що ми не шукаємо працівників"

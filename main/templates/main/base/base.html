@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+{% include "main/base/head.html" %}
+{% block head %}
+{% endblock %}
+<title>{% block title %}{% endblock %}</title>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TRGJQL9"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+<!-- Preloader Start-->
+<div id="preloader">
+    <div class="row loader">
+        <div class="loader-icon"></div>
+    </div>
+</div>
+<!-- Preloader End -->
+{% include "main/base/header.html" %}
+
+{% block content %}
+{% endblock %}
+{% include "main/base/footer.html" %}
+
+<div class="cookie-banner" style="display: none">
+  <div class="close-cookie"><i class="fa fa-close"></i></div>
+  <p>Serwis iphone.waw.pl korzysta z plików cookies w celu dostarczenia Ci oferty jak najlepiej dostosowanej do Twoich oczekiwań i preferencji, jak również
+    w celach marketingowych i analitycznych. Kontynuując korzystanie z Serwisu, wyrażasz zgodę na użycie plików cookies. Więcej informacji, w tym o
+    możliwości zmiany ustawień cookies, znajdziesz w <a href="/polityka-prywatnosci">Polityce prywatności</a>.</p>
+</div>
+
+{% include "main/base/js.html" %}
+</body>
+</html>

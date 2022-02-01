@@ -1,0 +1,54 @@
+{% load static %}
+{% load compress %}
+<head>
+    <!-- Google Tag Manager -->
+        <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-TRGJQL9');</script>
+    <!-- End Google Tag Manager -->
+
+    <meta charset="UTF-8">
+    <meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+          name="viewport">
+    <meta content="ie=edge" http-equiv="X-UA-Compatible">
+    <link href="{% static 'main/img/logos/logo-shortcut.png' %}" rel="shortcut icon"/>
+    {% compress css %}
+    <link href="{% static 'main/css/bootstrap.min.css' %}" rel="stylesheet" type="text/css">
+    <link href="{% static 'main/css/jquery.datetimepicker.min.css' %}" rel="stylesheet" type="text/css">
+    <link href="{% static 'main/css/animate.css' %}" rel="stylesheet" type="text/css">
+    <link href="{% static 'main/css/default.css' %}" rel="stylesheet" type="text/css">
+    <link href="{% static 'main/css/font-awesome.css' %}" rel="stylesheet" type="text/css">
+    <link href="{% static 'main/css/icomoon.css' %}" rel="stylesheet" type="text/css">
+    <link href="{% static 'main/css/navigation.css' %}" rel="stylesheet" type="text/css">
+    <link href="{% static 'main/css/owl.carousel.css' %}" rel="stylesheet" type="text/css">
+    <link href="{% static 'main/css/rev-settings.css' %}" rel="stylesheet" type="text/css">
+    <link href="{% static 'main/css/slick.css' %}" rel="stylesheet" type="text/css">
+    <link href="{% static 'main/css/slider.css' %}" rel="stylesheet" type="text/css">
+    <link href="{% static 'main/css/swiper.min.css' %}" rel="stylesheet" type="text/css">
+    <link href="{% static 'main/css/styles.css' %}" rel="stylesheet" type="text/css">
+    <link href="{% static 'main/css/custom.css' %}" rel="stylesheet" type="text/css">
+    {% endcompress %}
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+      <!-- Facebook Pixel Code -->
+        <script>
+        !function(f,b,e,v,n,t,s)
+        {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+        n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+        if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+        n.queue=[];t=b.createElement(e);t.async=!0;
+        t.src=v;s=b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t,s)}(window, document,'script',
+        'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '1295845540814603');
+        fbq('track', 'PageView');
+        </script>
+        <noscript><img height="1" width="1" style="display:none"
+        src="https://www.facebook.com/tr?id=1295845540814603&ev=PageView&noscript=1"
+        /></noscript>
+    <!-- End Facebook Pixel Code -->
+    <script src="//code.jivosite.com/widget/dvr5rAlHu7" async></script>
+</head>

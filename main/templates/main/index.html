@@ -1,0 +1,355 @@
+{% extends 'main/base/base.html' %}
+{% load static %}
+{% load i18n %}
+{% load thumbnail %}
+{% block head %}
+<meta name="description" content="Dobry Majster - Apple Service Warszawa. Naprawa telefonów , laptopów , tabletów Apple Warszawa. Telefon: ☎ +48 795 010 707"/>
+<meta name="keywords" content="Apple , naprawa Apple , naprawa Apple Warszawa , serwis , service , naprawa laptopów , naprawa komórek , naprawa telefonów Warszawa , Dobry Majster , iPhone , iPad , AppleWatch , MacBook" />
+<meta name="author" lang="pl" content="Dobry Majster - Apple Service Warszawa" />
+    <link rel="canonical" href="https://iphone.waw.pl/">
+{% endblock %}
+{% block title %}{% trans "Serwis Apple Warszawa Śródmieście | Naprawa iPhone Warszawa" %}{% endblock %}
+{% block content %}
+
+
+<!---Main Image Section Start--->
+<div class="main-image-section"
+     style="background-image: linear-gradient( rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5) ), url('../../static/main/img/slider_image/main_slider_image.jpg');">
+    <!-- Overlay Start -->
+    <div class="medium-overlay"></div>
+    <!-- Overlay End -->
+    <div class="main-image-content">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-main-slider text-center">
+                    <div class="center-holder">
+                        <h2>
+                            {% trans "Wyjątkowe urządzenia wymagają wyjątkowego traktowania" %}
+                        </h2>
+                        <p>
+                            {% trans "Jeśli więc Twój sprzęt marki Apple odmawia posłuszeństwa albo po prostu chcesz poddać go konserwacji, serwisowi czy odnowieniu to warto oddać go w ręce specjalistów." %}
+
+                        </p>
+                        <div class="mt-30">
+                            <a class="primary-button button-md" href="{% url 'contact' %}" style="margin-left: 2%;">{% trans "Kontakt" %}</a>
+                            <a class="primary-button button-md button_call" href="tel:+48795010707">{% trans "Zadzwoń" %}</a>
+                            <a href="javascript:PopUpShow()" class="primary-button button-md button_call">{% trans "Zamów rozmowę" %}</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!---Main Image Section End--->
+
+
+<!-- Info Section START -->
+<div class="section-block-grey about">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-7 col-sm-12 col-xs-12">
+                <div class="pr-30-md">
+                    <div class="section-heading">
+                        <h4>{% trans "O nas" %}</h4>
+                    </div>
+                    <div class="section-heading-line-left"></div>
+                    <div class="text-content-big mt-20">
+                        <p>{% trans "Jako doświadczony zespół serwisantów potrafimy pomóc Ci z każdą usterką i rozwiać każdą wątpliwość dotyczącą funkcjonowania Twojego iPhone, iPad, MacBook, Apple Watch czy Apple TV i wielu innych modeli w gamie giganta z Cupertino. To właśnie u nas przywrócisz tym urządzeniom ich pierwotną formę, oszczędzając pieniądze i na nowo ciesząc się funkcjonowaniem tych niezwykłych gadżetów z logo nadgryzionego jabłka." %}
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-5 col-sm-12 col-xs-12 text-center">
+                <img alt="img" class="text-center" src="../../static/main/img/logos/logo.png" width="70%">
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Info Section END -->
+<!-- Info Section START -->
+<div class="container">
+    <div class="blog-list-simple">
+        <div class="row">
+            <div class="col-12">
+                <div class="blog-list-simple-img col-sm-12 col-xs-12">
+                    <img class="img-left rounded-border shadow-primary" src="../../static/main/img/homepage_img/homepage_img_1.jpg" alt="img" width="50%">
+                </div>
+                <div class="blog-list-simple-text col-sm-12 col-xs-12">
+                    <h4>{% trans "Serwis Apple Warszawa" %}</h4>
+                    <div class="section-heading-line-left"></div>
+                    <p>
+                        {% trans "Wyjątkowe urządzenia wymagają wyjątkowego traktowania. Jeśli więc Twój sprzęt marki Apple odmawia posłuszeństwa albo po prostu chcesz poddać go konserwacji, serwisowi czy odnowieniu to warto oddać go w ręce specjalistów." %}</p><br>
+                        <p>{% trans "Jako doświadczony zespół serwisantów potrafimy pomóc Ci z każdą usterką i rozwiać każdą wątpliwość dotyczącą funkcjonowania Twojego iPhone, iPad, MacBook, Apple Watch czy Apple TV i wielu innych modeli w gamie giganta z Cupertino. To właśnie u nas przywrócisz tym urządzeniom ich pierwotną formę, oszczędzając pieniądze i na nowo ciesząc się funkcjonowaniem tych niezwykłych gadżetów z logo nadgryzionego jabłka." %}
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Info Section END -->
+
+<!-- Feature Boxes Section START -->
+<div class="section-block-bg section-md"
+     style="background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('../../static/main/img/slider_image/about_slider_image.jpg');">
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
+                <div class="pr-30-md">
+                    <div class="section-heading white-color mt-30">
+                        <h1><strong>{% trans "Serwis Apple Warszawa Śródmieście – dlaczego my?" %}</strong></h1>
+                        <div class="section-heading-line-left"></div>
+                    </div>
+                    <div class="text-content white-color mt-25">
+                        <p>{% trans "Dlaczego to właśnie w nasze ręce możesz powierzyć swoje ulubione urządzenie z gamy Apple? Ponieważ tak, jak Ty jesteśmy pasjonatami marki. Nie tylko więc jesteśmy technicznie przygotowani do podjęcia się nawet najbardziej skomplikowanej naprawy, ale także rozumiemy całą filozofię funkcjonowania ekosystemu Apple. Dokonując napraw, nie staramy się oszczędzać za wszelką cenę – to nie „chińszczyzna”, ale sprzęt marki premium, który swoim działaniem ma sprawiać przyjemność użytkownikowi i na każdym kroku przypominać, że ma do czynienia z produktem prestiżowym, perfekcyjnie funkcjonującym w każdym calu. Dlatego najchętniej korzystamy z oryginalnych części zamiennych, a jeśli to niemożliwe to wybieramy jedynie najwyższej jakości zamienniki. Przy wszelkich pracach serwisowych i naprawczych ściśle trzymamy się instrukcji opracowanych przez producenta – tak jak Ty ufamy, że doskonale opracował on swoje urządzenia i najlepiej wie jak je naprawiać." %}
+                        </p>
+                    </div>
+                    <a class="primary-button button-md mt-25" href="{% url 'contact' %}">{% trans "Kontakt" %}</a>
+                </div>
+            </div>
+            <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
+                <div class="row">
+
+                    <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
+                        <div class="feature-box">
+                            <i class="icon-clock2"></i>
+                            <h4>{% trans "Szybka naprawa od ręki" %}</h4>
+                            <p>{% trans "Wykonujemy ponad 80" %}% {% trans "napraw od ręki w 30 minut" %}</p>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
+                        <div class="feature-box">
+                            <i class="fa fa-mobile"></i>
+                            <h4>{% trans "Infolinia 24h/7 dni" %}</h4>
+                            <p>{% trans "Zdiagnozuj i wyceń on-line!" %}</p>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
+                        <div class="feature-box">
+                            <i class="icon-wallet2"></i>
+                            <h4>{% trans "Gwarancja do 365 dni" %}</h4>
+                            <p>{% trans "Po naprawie nie musisz się o nic martwić, w razie potrzeby usuniemy usterkę za darmo." %}</p>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
+                        <div class="feature-box">
+                            <i class="fa fa-cog" aria-hidden="true"></i>
+                            <h4>{% trans "Darmowa diagnoza" %}</h4>
+                            <p>{% trans "Naprawiamy wszystko - dla nas nie ma rzeczy niemożliwych." %}<br>{% trans "Przynieś swój sprzęt, naprawimy każde urządzenie." %}</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Info Section START -->
+<div class="container">
+    <div class="blog-list-simple">
+        <div class="row">
+            <div class="col-12">
+                <div class="blog-list-simple-img">
+                    <img class="img-right rounded-border shadow-primary" src="../../static/main/img/homepage_img/homepage_img_2.jpg" alt="img" width="50%">
+                </div>
+                <div class="blog-list-simple-text">
+                    <h4>{% trans "Apple serwis Warszawa – pomożemy Ci nie tylko z telefonem" %}</h4>
+                    <div class="section-heading-line-left"></div>
+                    <p>{% trans "Wysokiej jakości sprzęty Apple to nie tylko iPhone, ale również cieszące się rosnącym powodzeniem komputery iMac i Mac mini, laptopy MacBook i tablety iPad. Na szczęście niezależnie od tego, czy posiadasz najnowszy model któregoś z wymienionych sprzętów, czy urządzenie kilkuletnie u nas możesz liczyć na pełną dostępność części i akcesoriów i profesjonalną naprawę." %}</p><br><p> {% trans "Niezależnie z jak poważnym problemem masz do czynienia – czy uszkodzenie płyty głównej, zalanie, uszkodzenie dysku SSD czy HDD, problemy z gniazdem ładowania lub złączem wyświetlacza, u nas bezstresowo naprawisz swoje urządzenie. Zdobyte doświadczenie pozwala nam na podjęcie się każdego rodzaju naprawy – nawet jeśli na pierwszy rzut oka wydaje się ona niezwykle trudna i czasochłonna. Pomagamy w odzyskiwaniu przypadkowo utraconej zawartości dysków, ponownej instalacji systemu operacyjnego czy usunięciu składników, które niepotrzebnie spowalniają Twoje urządzenie." %}</p><br><p> {% trans "Podobnie w przypadku problemów z iPadami. Te doskonałe tablety od Apple również wymagają niekiedy wymiany ekranu, panelu dotykowego, gniazda ładowania czy innych elementów, a stosując wysokiej jakości części, można przywrócić im oryginalne funkcjonowanie i na nowo cieszyć się doskonałą wydajnością i smukłą pracą. Gwarantujemy Ci, że po wizycie w naszym serwisie nie będziesz w stanie rozpoznać, że urządzenie miało wcześniej jakiekolwiek problemy techniczne – jego działanie będzie identyczne, jak świeżo zakupionego iPada czy MacBooka." %}
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Info Section END -->
+
+<!--Testmonials Section START-->
+<div class="section-block-grey">
+    <div class="container">
+        <div class="section-heading center-holder">
+            <h3>{% trans "Opinie" %}</h3>
+            <div class="section-heading-line"></div>
+            <p>{% trans "Co o nas mówią nasi klienci" %}</p>
+            <a href="https://www.google.pl/maps/place/Dobry+Majster/@52.24265,20.9899809,17z/data=!4m7!3m6!1s0x471ecd320b613705:0x8797eb04fd58cb25!8m2!3d52.24265!4d20.9921749!9m1!1b1?hl=pl"
+               target="_blank">
+                <button class="primary-button button-md" style="margin-top:20px;">{% trans "Zobacz wszystkie opinie" %}</button>
+            </a>
+        </div>
+        <div class="row mt-40">
+            <div class="owl-carousel owl-theme" id="testmonials-carousel-2">
+                {% for el in reviews %}
+                <div class="testmonial-box-2">
+                    <h4>{{ el.name }}</h4>
+                    <p>{{ el.desc }}</p>
+                    <div class="testmonial-rating">
+                        <i aria-hidden="true" class="fa fa-star"></i>
+                        <i aria-hidden="true" class="fa fa-star"></i>
+                        <i aria-hidden="true" class="fa fa-star"></i>
+                        <i aria-hidden="true" class="fa fa-star"></i>
+                        <i aria-hidden="true" class="fa fa-star"></i>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</div>
+<!--Testmonials Section END-->
+<!-- Info Section START -->
+<div class="container">
+    <div class="blog-list-simple">
+        <div class="row">
+            <div class="col-12">
+                <div class="blog-list-simple-img">
+                    <img class="img-left rounded-border shadow-primary" src="../../static/main/img/homepage_img/service_image.jpg" alt="img" width="50%">
+                </div>
+                <div class="blog-list-simple-text">
+                    <h4>{% trans "Serwis iPhone Warszawa" %}</h4>
+                    <div class="section-heading-line-left"></div>
+                    <p>{% trans "Chyba nie potrafisz wyobrazić sobie codziennego funkcjonowania bez telefonu, prawda? My też nie, dlatego dokładamy wszelkich starań, by dokonywane przez nas naprawy odbywały się bez zbędnej zwłoki, ale również profesjonalnie – tak, by nie było potrzeby szybkiego powrotu do nas z tym samym problemem." %}</p><br><p> {% trans "W naszym serwisie dbamy o stałą dostępność najczęściej wymienianych podzespołów – baterii, wyświetlaczy, mikrofonów, głośników czy gniazd ładowania. Dzięki temu jesteśmy w stanie rozpocząć prace błyskawicznie po otrzymaniu Twojego iPhone do naprawy i oddać Ci go w maksymalnie krótkim czasie." %}</p><br> <p>{% trans "Jeśli naprawa przeciągnie się nieco (np. jeden czy dwa dni) to zaoferujemy Ci telefon zastępczy – nie wyobrażamy sobie przecież codziennego funkcjonowania bez telefonu. Na koniec otrzymasz pisemną gwarancję, dzięki której możesz mieć pewność, że praca została wykonana poprawnie i zgodnie z wszelkimi normami." %}
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Info Section END -->
+<!-- Map START -->
+<section>
+    <div class="mt-10" id="map">
+        <iframe allowfullscreen=""
+                aria-hidden="false" frameborder="0"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2443.0403921997586!2d20.989986215745816!3d52.24264997976272!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471ecc7ddd0790b1%3A0xe6ea4f260f2088c1!2sal.%20Jana%20Paw%C5%82a%20II%2041A%2C%2001-008%20Warszawa!5e0!3m2!1spl!2spl!4v1613293843441!5m2!1spl!2spl"
+                style="border:0;" tabindex="0"></iframe>
+    </div>
+</section>
+<!-- Map END -->
+<!-- Info Section START -->
+<div class="container">
+    <div class="blog-list-simple">
+        <div class="row">
+            <div class="col-12">
+                <div class="blog-list-simple-img">
+                    <img class="img-right rounded-border shadow-primary" src="../../static/main/img/homepage_img/homepage_img_3.jpg" alt="img" width="50%">
+                </div>
+                <div class="blog-list-simple-text">
+                    <h4>{% trans "Naprawa iPhone Warszawa Śródmieście – jeśli zbił się wyświetlacz" %}</h4>
+                    <div class="section-heading-line-left"></div>
+                    <p>{% trans "Zdecydowanie najczęstszą awarią, jaka spotyka naszych klientów posiadających telefony z logo Apple, jest pęknięcie wyświetlacza. Niekiedy wydaje się ono niepozorne, ale bardzo często z czasem przestaje poprawnie działać warstwa dotykowa – co uniemożliwia dalsze użytkowanie telefonu. Innym razem rozbicie wyświetlacza jest tak duże, że natychmiast skłania właściciela do wymiany." %}
+                    <p><br><p>{% trans "Niezależnie od powodu – nie warto się męczyć i skazywać na funkcjonowanie z niesprawnym telefonem. Pomimo popularnych opinii w sieci nie jest to takie proste, a próby samodzielnej wymiany mogą skończyć się uszkodzeniami płyty głównej, mikrofonu, obudowy czy nawet nowego ekranu. Twój iPhone to za drogie i za delikatne urządzenie, by poddawać go eksperymentom." %} </p><br>
+                    <p>{% trans "Pozostaw go więc w naszych rękach i już po niedługim czasie przywróć swojego iPhone do pełnej sprawności – niezależnie, czy zdecydujesz się na oryginalny, czy zamienny wyświetlacz. Zazwyczaj taka wymiana zajmie nam nie więcej niż godzinę – szybko, sprawnie i bezpiecznie." %}
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Info Section END -->
+<!-- Info Section START -->
+<div class="container">
+    <div class="blog-list-simple">
+        <div class="row">
+            <div class="col-12">
+                <div class="blog-list-simple-img">
+                    <img class="img-left rounded-border shadow-primary" src="../../static/main/img/homepage_img/homepage_img_4.jpg" alt="img" width="50%">
+                </div>
+                <div class="blog-list-simple-text">
+                    <h4>{% trans "Apple serwis Warszawa Śródmieście – jesteśmy po Twojej stronie" %} </h4>
+                    <div class="section-heading-line-left"></div>
+                    <p>{% trans "Podejmując się naprawy urządzenia marki Apple, możesz zdecydować się na oddanie go do oficjalnego serwisu. Oczywiście będziesz mieć pewność, że zastosowane zostaną oryginalne elementy, a prace wykonane zostaną zgodnie z zaleceniami producenta. To również sposób na zachowanie gwarancji – i jednocześnie jedyna sytuacja, w której naprawdę warto się na taki krok zdecydować. Nie ukrywajmy – naprawy w autoryzowanym serwisie są koszmarnie drogie, a ich główną zaletą jest właśnie gwarancja." %}</p><br>
+                    <p> {% trans "Jeśli jednak Twoje urządzenie nie posiada już gwarancji, nie ma ona dla Ciebie znaczenia albo usterka i tak powoduje utratę ochrony producenta (np. zalanie, albo głębokie uszkodzenie mechaniczne), to oddanie iPhone, iPada czy MacBooka do serwisu Apple nie ma większego sensu. My wykonamy dla Ciebie niezbędną naprawę szybciej – nawet w ciągu godziny, równie profesjonalnie – co potwierdzamy pisemną gwarancją serwisową i taniej – w czym zasługa wykorzystania wysokiej jakości zamienników." %}
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Info Section END -->
+
+<!-- Info Section START -->
+<div class="container">
+    <div class="blog-list-simple">
+        <div class="row">
+            <div class="col-12">
+                <div class="blog-list-simple-img">
+                    <img class="img-right rounded-border shadow-primary" src="../../static/main/img/homepage_img/homepage_img_5.jpg" alt="img" width="50%">
+                </div>
+                <div class="blog-list-simple-text">
+                    <h4>{% trans "Naprawa iPhone Warszawa – po zalaniu" %} </h4>
+                    <div class="section-heading-line-left"></div>
+                    <p>{% trans "Zalanie telefonu wcale nie musi oznaczać jego ostatecznego uszkodzenia. Oczywiście urządzenia, do którego dostała się woda, nie należy dalej użytkować, ani liczyć na samoistne zniknięcie problemu. By możliwa była naprawa należy jak najwcześniej je wyłączyć i oddać do serwisu." %}</p><br>
+                    <p>{% trans "Tylko w ten sposób można zabezpieczyć iPhone przed destrukcyjnym działaniem wody. Dalsze wykorzystywanie urządzenia, w którym znajduje się ciecz, niemal na pewno doprowadzi do większych uszkodzeń – w najgorszym przypadku będzie to spalenie płyty głównej, ale prawdopodobne jest również spuchnięcie baterii, pojawienie się plam na wyświetlaczu czy uszkodzenie mikrofonu i głośnika. Jeśli jednak szybko oddasz Twój telefon do nas, to masz niemalże 100% pewności, że wróci sprawny i po zalaniu nie zostaną żadne ślady." %}
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Info Section END -->
+<!-- Info Section START -->
+<div class="container">
+    <div class="blog-list-simple">
+        <div class="row">
+            <div class="col-12">
+                <div class="blog-list-simple-img">
+                    <img class="img-left rounded-border shadow-primary" src="../../static/main/img/homepage_img/homepage_img_6.jpg" alt="img" width="50%">
+                </div>
+                <div class="blog-list-simple-text">
+                    <h4>{% trans "Naprawa Apple Warszawa – krok po kroku" %}</h4>
+                    <div class="section-heading-line-left"></div>
+                    <p>{% trans "Każdy oddany w nasze ręce telefon zostaje podjęty gruntownej analizie. Zanim podejmiemy się jakichkolwiek działań, nawet zanim będziemy w stanie poinformować Cię o cenie podejmowanej przez nas naprawy, musimy mieć pewność, co dokładnie uległo uszkodzeniu. Bardzo cenimy sobie więc zatem wszystkie informacje, wskazujące na potencjalną przyczynę usterki oraz dokładny opis objawów, jakie w związku z nią wystąpiły." %}</p><br>
+                    <p>{% trans "Oczywiście nie zastępują one tego, co możemy zobaczyć, rozbierając urządzenie i samodzielnie oceniając każdy element w jego wnętrzu. Dlatego też nigdy się nie spieszymy, dokonując oceny stanu technicznego – mamy świadomość, że pospiesznie podjęte działania mogą przyczynić się do uszkodzenia nowej części, jak i pogorszenia sytuacji samego urządzenia." %}</p><br>
+                    <p>{% trans "Przy oględzinach urządzenia nie idziemy na skróty i nie zdajemy się na popularne schematy postępowania. W przypadku sprzętu za kilka, a niekiedy nawet kilkanaście tysięcy złotych uszkodzenia są ostatnią rzeczą, na którą możemy sobie pozwolić – mając to na uwadze, dokładamy starań, by nie pomylić się, poprawnie wykonać usługę i naszemu klientowi oddać w pełni sprawne urządzenie, co poświadczamy również naszą gwarancją." %}
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Info Section END -->
+<!-- Info Section START -->
+<div class="container">
+    <div class="blog-list-simple">
+        <div class="row">
+            <div class="col-12">
+                <div class="blog-list-simple-img">
+                    <img class="img-right rounded-border shadow-primary" src="../../static/main/img/homepage_img/homepage_img_7.jpg" alt="img" width="50%">
+                </div>
+                <div class="blog-list-simple-text">
+                    <h4>{% trans "Serwis baterii Apple Warszawa Śródmieście" %}</h4>
+                    <div class="section-heading-line-left"></div>
+                    <p>{% trans "Wszystkie aktualnie produkowane urządzenia marki Apple mają wbudowane na stałe akumulatory. Jest to zarówno zaletą – sprzęt jest bardziej odporny na wstrząsy i solidniejszy, jak i wadą – w przypadku uszkodzenia czy zużycia baterii wiele osób godzi się na gorsze funkcjonowanie albo rozgląda się za nowym telefonem, tabletem, czy komputerem. Na szczęście to nie jedyne rozwiązanie – w naszym serwisie bezproblemowo wymienisz baterię swojego Appla na nową, dzięki czemu zaoszczędzisz setki, a nawet tysiące złotych, jest to również najlepsze rozwiązanie z powodów ekologicznych – zamiast co chwilę sięgać po nowe urządzenie znacznie mądrzej i lepiej dla planety będzie, jeśli zdecydujesz się na jego naprawę." %}</p><br>
+                    <p>{% trans "Sprawna i wymieniona bateria pozwala cieszyć się kolejnymi latami bezproblemowego użytkowania – szczególnie mając na uwadze, że urządzenia z logo nadgryzionego jabłka starzeją się wyraźnie wolniej od konkurencji, dłużej otrzymują aktualizacje i wykonane są z wyższej jakości materiałów, które lepiej znoszą próbę czasu. Dlatego wymiana baterii na zamiennik wysokiej jakości albo oryginał ma jak najbardziej sens." %}
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Info Section END -->
+<!-- Info Section START -->
+<div class="container">
+    <div class="blog-list-simple">
+        <div class="row">
+            <div class="col-12">
+                <div class="blog-list-simple-img">
+                    <img class="img-left rounded-border shadow-primary" src="../../static/main/img/homepage_img/homepage_img_8.jpg" alt="img" width="50%">
+                </div>
+                <div class="blog-list-simple-text">
+                    <h4>{% trans "Apple serwis Warszawa Śródmieście – postaw na specjalistów" %}</h4>
+                    <div class="section-heading-line-left"></div>
+                    <p>{% trans "Twój sprzęt to kawał porządnie, solidnie opracowanej i wykonanej elektroniki. Urządzenia marki Apple są tak stworzone, by ich obsługa sprawiała jak najwięcej radości i by stanowiły doskonałe narzędzie w pracy – niezależnie czym się zajmujesz." %}</p><br>
+                    <p>{% trans "Kiedy ulegnie uszkodzeniu, warto więc oddać je w sprawdzone ręce, by znów działało jak dawniej, zapewniając Ci podobną przyjemność i wygodę użytkowania jak wtedy, gdy wyciągałeś go z po raz pierwszy z pudełka. Dokładamy starań, byś to właśnie u nas znalazł najlepszy serwis iPhone w Warszawa Śródmieście – niezależnie od skali problemu i tego, jak trudny by się wydawał, to właśnie u nas znajdziesz jego rozwiązanie." %}
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Info Section END -->
+{% endblock %}
